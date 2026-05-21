@@ -22,7 +22,7 @@ export default function Sobre() {
           { k: "4", v: "People on the team" },
         ].map((s) => (
           <div key={s.k} className="rounded-2xl border border-border bg-card p-6">
-            <p className="font-display text-4xl text-brand-glow/50">{s.k}</p>
+            <p className="font-display text-4xl text-background">{s.k}</p>
             <p className="mt-1 text-sm text-muted-foreground/60">{s.v}</p>
           </div>
         ))}
