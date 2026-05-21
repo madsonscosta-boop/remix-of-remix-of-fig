@@ -16,12 +16,21 @@ export default function Index() {
               "radial-gradient(60% 50% at 20% 10%, oklch(0.45 0.30 275 / 0.5), transparent 70%), radial-gradient(50% 60% at 90% 30%, oklch(0.62 0.22 278 / 0.35), transparent 70%)",
           }}
         />
-        <div className="mx-auto max-w-7xl px-6 pt-10 pb-32">
-          <div className="relative aspect-video w-full overflow-hidden rounded-3xl border border-border/50 bg-card/40 backdrop-blur">
-            <div className="flex h-full w-full items-center justify-center text-sm text-muted-foreground">
-              Video coming soon
-            </div>
+        <div className="pb-32">
+          <div className="relative aspect-video w-full overflow-hidden bg-card/40">
+            <video
+              src="/hero.mp4"
+              className="h-full w-full object-cover"
+              playsInline
+              muted
+              loop
+              autoPlay
+              preload="metadata"
+            />
           </div>
+
+          <div className="mx-auto max-w-7xl px-6">
+
 
           <div className="mt-24 rounded-3xl px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20" style={{ backgroundColor: "#6f64ff" }}>
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
@@ -35,7 +44,9 @@ export default function Index() {
               <span>Let's talk!</span>
             </Link>
           </div>
+          </div>
         </div>
+
       </section>
 
       {/* GALLERY MOSAIC */}
