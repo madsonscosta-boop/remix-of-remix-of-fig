@@ -44,7 +44,9 @@ export default function Index() {
               <span>Let's talk!</span>
             </Link>
           </div>
+          </div>
         </div>
+
       </section>
 
       {/* GALLERY MOSAIC */}
