@@ -3,7 +3,7 @@ import { portfolioItems } from "@/lib/portfolio";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Trabalhos() {
-  usePageMeta("Work — FIG", "FIG portfolio: branding, content, social, and paid media.");
+  usePageMeta("Works — FIG", "FIG portfolio: branding, content, social, and paid media.");
   return (
     <>
       <section className="bg-cream px-6 pt-20 pb-12 md:pt-28">

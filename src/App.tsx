@@ -64,7 +64,7 @@ function Header() {
           </button>
           <nav className="flex h-full w-full flex-col items-center justify-center gap-6 text-background animate-scale-in">
             <NavLink to="/#services" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" onClick={() => setOpen(false)}>Services</NavLink>
-            <NavLink to="/#portfolio" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" onClick={() => setOpen(false)}>Work</NavLink>
+            <NavLink to="/#portfolio" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" onClick={() => setOpen(false)}>Works</NavLink>
             <NavLink to="/about" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" onClick={() => setOpen(false)}>About</NavLink>
             <NavLink to="/#contact" className="mt-4 rounded-full bg-brand px-8 py-4 text-lg text-white transition hover:bg-brand-glow" onClick={() => setOpen(false)}>Talk</NavLink>
           </nav>
@@ -88,7 +88,7 @@ function Footer() {
           <p className="text-xs uppercase tracking-widest text-white/60">Navigate</p>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li><Link to="/#services" className="transition hover:text-brand-glow">Services</Link></li>
-            <li><Link to="/#portfolio" className="transition hover:text-brand-glow">Work</Link></li>
+            <li><Link to="/#portfolio" className="transition hover:text-brand-glow">Works</Link></li>
             <li><Link to="/about" className="transition hover:text-brand-glow">About</Link></li>
             <li><Link to="/#contact" className="transition hover:text-brand-glow">Contact</Link></li>
           </ul>
