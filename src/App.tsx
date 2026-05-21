@@ -97,7 +97,7 @@ function Footer() {
           <p className="text-xs uppercase tracking-widest text-white/60">Contact</p>
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li><a href="mailto:hello@figtheagency.com" className="transition hover:text-brand-glow">hello@figtheagency.com</a></li>
-            <li><a href="https://instagram.com" className="transition hover:text-brand-glow">@fig.agency</a></li>
+            <li><a href="https://www.instagram.com/figtheagency" className="transition hover:text-brand-glow">@figtheagency</a></li>
           </ul>
         </div>
       </div>
