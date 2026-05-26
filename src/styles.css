@@ -173,10 +173,6 @@
 }
 
 .highlight-chip {
-  display: inline;
   font-weight: 700;
-  color: oklch(0.38 0.07 40);
-  padding: 0.15em 0.3em;
-  border-radius: 0.25em;
-  background: oklch(0.75 0.11 195 / 0.25);
+  text-shadow: 0 0 8px rgba(107, 63, 160, 0.35), 0 0 16px rgba(107, 63, 160, 0.2);
 }
