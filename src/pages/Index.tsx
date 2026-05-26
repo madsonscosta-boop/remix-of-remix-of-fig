@@ -102,7 +102,7 @@ export default function Index() {
       <section className="border-t border-border/40 bg-[#0e1020] text-primary-foreground">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <p className="font-display text-2xl leading-tight md:text-4xl">
-            "Working with FIG made a huge difference. My Instagram grew from 400 to 1,395 followers, the workshops sold out, and I felt comfortable in front of cameras, even getting invited to TV. Professional and dedicated support. Highly recommend!"
+            "Working with FIG made a huge difference, my Instagram grew from 400 to 1,395 followers, the workshops sold out, and I felt comfortable in front of cameras, even getting invited to TV; Professional and dedicated support. Highly recommend!"
           </p>
           <div className="mt-10 flex items-center gap-4">
             <div className="h-12 w-12 rounded-full bg-cream" />
