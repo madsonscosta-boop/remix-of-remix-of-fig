@@ -72,7 +72,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">7. Seus Direitos</h2>
+          <h2 className="font-display text-2xl text-ink">7. Seus Direitos</h2>
           <p className="mt-3">
             De acordo com a legislação aplicável (incluindo a LGPD no Brasil e o GDPR na Europa), você tem o direito de:
           </p>
@@ -86,33 +86,33 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">8. Retenção dos Dados</h2>
+          <h2 className="font-display text-2xl text-ink">8. Retenção dos Dados</h2>
           <p className="mt-3">
             Mantemos seus dados apenas pelo tempo necessário para cumprir as finalidades descritas nesta política ou conforme exigido por obrigações legais, contratuais e fiscais.
           </p>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">9. Alterações nesta Política</h2>
+          <h2 className="font-display text-2xl text-ink">9. Alterações nesta Política</h2>
           <p className="mt-3">
             Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos sobre mudanças significativas por e-mail ou através de aviso em nosso site.
           </p>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">10. Contato</h2>
+          <h2 className="font-display text-2xl text-ink">10. Contato</h2>
           <p className="mt-3">
             Se tiver dúvidas sobre esta Política de Privacidade ou desejar exercer seus direitos, entre em contato conosco:
           </p>
           <p className="mt-3">
             <strong>E-mail:</strong>{" "}
-            <a href="mailto:hello@figtheagency.com" className="underline transition hover:text-[#6f64ff]">
+            <a href="mailto:hello@figtheagency.com" className="underline transition hover:text-coral">
               hello@figtheagency.com
             </a>
           </p>
           <p className="mt-1">
             <strong>Instagram:</strong>{" "}
-            <a href="https://www.instagram.com/figtheagency" className="underline transition hover:text-[#6f64ff]">
+            <a href="https://www.instagram.com/figtheagency" className="underline transition hover:text-coral">
               @figtheagency
             </a>
           </p>
