@@ -14,6 +14,7 @@ export type PortfolioItem = {
   coverVideo?: string;
   fit?: "cover" | "contain";
   credits?: string;
+  highlights?: string[];
 };
 
 export const portfolioItems: PortfolioItem[] = [
@@ -33,6 +34,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/marca-alimentacao/video-1.mp4",
       "/portfolio/marca-alimentacao/video-2.mp4",
     ],
+    highlights: ["+1000 followers", "Workshops sold out"],
   },
   {
     slug: "hanno",
@@ -63,6 +65,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/ori-mart/video-2.mp4",
       "/portfolio/ori-mart/video-3.mp4",
     ],
+    highlights: ["+41% followers", "272K+ views", "97K reel", "€0.05 CPC"],
   },
   {
     slug: "esporte",
@@ -80,6 +83,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/biennale/video-2.mp4",
     ],
     credits: "Video and audio by Jeff Hoogendijk\nScript by FIG Agency",
+    highlights: ["0 → 6,000 followers", "Sold-out launch edition"],
   },
   {
     slug: "estadio",
@@ -97,6 +101,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/wasteland/image-2.jpeg",
       "/portfolio/wasteland/image-3.jpeg",
     ],
+    highlights: ["20+ artists coordinated", "Engaged community"],
   },
 ];
 

@@ -22,7 +22,20 @@ export default function PortfolioDetail() {
         <p className="mt-6 font-display text-sm uppercase tracking-widest text-[#0E1020]/60 whitespace-pre-line">{item.category}</p>
         <h1 className="mt-3 font-display text-5xl leading-tight text-[#0E1020] md:text-6xl">{item.title}</h1>
         <p className="mt-4 whitespace-pre-line text-lg text-[#0E1020]/80 font-sans">{item.summary}</p>
+        {item.highlights && item.highlights.length > 0 && (
+          <div className="mt-8 flex flex-wrap gap-3">
+            {item.highlights.map((h, i) => (
+              <span
+                key={i}
+                className="rounded-full bg-[#6B3FA0] px-5 py-2 font-display text-base text-white shadow-[0_8px_24px_-8px_rgba(107,63,160,0.55)] transition-transform hover:-translate-y-0.5 md:text-lg"
+              >
+                {h}
+              </span>
+            ))}
+          </div>
+        )}
       </section>
+
 
       <section className="mx-auto max-w-6xl px-6 pb-16">
         {item.layout === "video-image-video" && item.videos && item.centerImage ? (
