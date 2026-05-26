@@ -118,7 +118,7 @@ function Footer() {
           </div>
         </div>
         <div>
-          <button className="rounded-full bg-coral px-6 py-2 text-xs uppercase tracking-widest text-white transition hover:bg-coral/80">
+          <button className="rounded-full bg-[#0e1020] px-6 py-2 text-xs uppercase tracking-widest text-white transition hover:bg-[#0e1020]/80">
             <Link to="/privacy" className="text-white">PRIVACY</Link>
           </button>
         </div>
