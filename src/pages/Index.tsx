@@ -16,8 +16,11 @@ function shuffle<T>(arr: T[]): T[] {
 
 export default function Index() {
   const shuffledItems = useMemo(() => {
-    const items = shuffle(portfolioItems);
-    return items.map((item) => ({
+    const videoItems = portfolioItems.filter((p) => p.coverVideo);
+    const imageItems = portfolioItems.filter((p) => !p.coverVideo);
+    const shuffledVideos = shuffle(videoItems);
+    const ordered = [...shuffledVideos, ...imageItems];
+    return ordered.map((item) => ({
       item,
       floatDelay: Math.random() * 2,
       floatDuration: 5 + Math.random() * 3,
