@@ -15,6 +15,18 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export default function Index() {
+  const shuffledItems = useMemo(() => {
+    const items = shuffle(portfolioItems);
+    // Pool of column spans (out of 6) to create varied tile sizes
+    const spanPool = shuffle([2, 3, 2, 4, 3]);
+    return items.map((item, i) => ({
+      item,
+      colSpan: spanPool[i % spanPool.length],
+      floatDelay: Math.random() * 2,
+      floatDuration: 5 + Math.random() * 3,
+    }));
+  }, []);
+
   return (
     <>
       {/* HERO */}
