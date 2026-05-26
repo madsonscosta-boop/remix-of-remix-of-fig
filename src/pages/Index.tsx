@@ -108,8 +108,8 @@ export default function Index() {
           <div className="mt-10 flex items-center gap-4">
             <div className="h-12 w-12 rounded-full bg-[#FF7A3D] ring-2 ring-[#f0d78c]/60" />
             <div>
-              <p className="font-medium text-[#f0d78c]">Oficina Amor</p>
-              <p className="text-sm text-[#D8D3C9]">Head of Growth</p>
+              <p className="font-medium text-[#6f64ff]">Oficina Amor</p>
+              <p className="text-sm text-[#1a1a2e]/70">Head of Growth</p>
             </div>
           </div>
         </div>
