@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Mail, Globe } from "lucide-react";
 
 export default function Privacy() {
   useEffect(() => {
