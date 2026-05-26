@@ -57,7 +57,7 @@ export default function Index() {
           <div className="mx-auto max-w-7xl px-6">
 
 
-          <div className="mt-24 rounded-3xl px-8 py-20 text-center text-primary-foreground md:px-16 md:py-28" style={{ backgroundColor: "#6f64ff" }}>
+          <div className="mt-24 rounded-3xl px-8 py-20 text-center text-primary-foreground md:px-16 md:py-28" style={{ backgroundColor: "#0055FF" }}>
             <p className="mx-auto max-w-4xl font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
               Grow where it matters.
             </p>
@@ -115,7 +115,7 @@ export default function Index() {
 
       {/* SERVICES */}
       <section id="services" className="bg-cream px-6 py-20 scroll-mt-24">
-        <div className="mx-auto max-w-7xl rounded-3xl bg-[#0055FF] px-6 py-20 text-center md:px-16 md:py-24">
+        <div className="mx-auto max-w-7xl rounded-3xl bg-[#6f64ff] px-6 py-20 text-center md:px-16 md:py-24">
           <h2 className="font-display text-4xl text-cream md:text-5xl">Our social media services</h2>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
@@ -132,7 +132,7 @@ export default function Index() {
                     {s.t}
                   </button>
                 </PopoverTrigger>
-                <PopoverContent side="top" className="max-w-xs rounded-2xl border-cream/30 bg-[#0055FF] text-cream">
+                <PopoverContent side="top" className="max-w-xs rounded-2xl border-cream/30 bg-[#6f64ff] text-cream">
                   <p className="font-display text-lg">{s.t}</p>
                   <p className="mt-2 text-sm text-cream/80">{s.d}</p>
                 </PopoverContent>
