@@ -203,24 +203,22 @@ export default function Privacy() {
           <p className="mt-3">
             For questions, requests, or any matter related to privacy and data protection, please contact us:
           </p>
-          <p className="mt-3">
-            Email:{" "}
+          <div className="mt-4 flex items-center gap-4">
             <a
               href="mailto:hello@figtheagency.com"
-              className="underline transition hover:text-[#6f64ff]"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#0e1020]/20 text-[#0e1020] transition hover:bg-[#0e1020] hover:text-white"
+              aria-label="Email"
             >
-              <strong>hello@figtheagency.com</strong>
+              <Mail size={18} />
             </a>
-          </p>
-          <p className="mt-1">
-            Website:{" "}
             <a
               href="https://figtheagency.com"
-              className="underline transition hover:text-[#6f64ff]"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-[#0e1020]/20 text-[#0e1020] transition hover:bg-[#0e1020] hover:text-white"
+              aria-label="Website"
             >
-              <strong>figtheagency.com</strong>
+              <Globe size={18} />
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </section>
