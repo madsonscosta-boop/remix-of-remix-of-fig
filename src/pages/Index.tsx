@@ -136,7 +136,7 @@ export default function Index() {
             </a>
           </div>
 
-          <p className="mt-6 text-center text-sm text-[#fafbfc]/60">
+          <p className="mt-6 text-center text-sm text-[#fafbfc]/80">
             or write to{" "}
             <a href={mailtoLink()} className="underline decoration-[#f0d78c] underline-offset-4 hover:text-[#f0d78c]">{EMAIL}</a>
           </p>
