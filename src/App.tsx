@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, Link, useLocation, NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
 import logo from "./assets/fig-logo.png";
 
 import Index from "./pages/Index";
