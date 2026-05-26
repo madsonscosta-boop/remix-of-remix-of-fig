@@ -13,6 +13,7 @@ export type PortfolioItem = {
   centerImage?: string;
   coverVideo?: string;
   fit?: "cover" | "contain";
+  credits?: string;
 };
 
 export const portfolioItems: PortfolioItem[] = [
@@ -78,6 +79,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/biennale/video-1.mp4",
       "/portfolio/biennale/video-2.mp4",
     ],
+    credits: "Video and audio by Jeff Hoogendijk\nScript by FIG Agency",
   },
   {
     slug: "estadio",
