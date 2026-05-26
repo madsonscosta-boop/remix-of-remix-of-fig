@@ -54,7 +54,7 @@ function Header() {
       </div>
 
       {open && (
-        <div className="fixed inset-0 z-40 bg-foreground/95 backdrop-blur-xl animate-fade-in">
+        <div className="fixed inset-0 z-40 bg-[#6f64ff]/95 backdrop-blur-xl animate-fade-in">
           <button
             type="button"
             onClick={() => setOpen(false)}
