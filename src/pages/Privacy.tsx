@@ -32,7 +32,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">3. Como Usamos seus Dados</h2>
+          <h2 className="font-display text-2xl text-ink">3. Como Usamos seus Dados</h2>
           <p className="mt-3">
             Utilizamos suas informações para:
           </p>
@@ -46,7 +46,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">4. Compartilhamento de Dados</h2>
+          <h2 className="font-display text-2xl text-ink">4. Compartilhamento de Dados</h2>
           <p className="mt-3">
             Não vendemos seus dados pessoais. Podemos compartilhá-los apenas com:
           </p>
@@ -58,14 +58,14 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">5. Cookies e Tecnologias de Rastreamento</h2>
+          <h2 className="font-display text-2xl text-ink">5. Cookies e Tecnologias de Rastreamento</h2>
           <p className="mt-3">
             Nosso site utiliza cookies para melhorar sua experiência, analisar tráfego e personalizar conteúdo. Você pode gerenciar suas preferências de cookies diretamente no navegador.
           </p>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">6. Segurança dos Dados</h2>
+          <h2 className="font-display text-2xl text-ink">6. Segurança dos Dados</h2>
           <p className="mt-3">
             Adotamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado, alteração, divulgação ou destruição. Isso inclui criptografia, firewalls e controles de acesso restrito.
           </p>
