@@ -31,7 +31,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed inset-x-0 top-4 z-50 px-4">
-      <div className="mx-auto flex w-fit items-center gap-4 rounded-full border border-[#0e1020]/10 bg-[#efdfe7] px-2 py-2 text-[#0e1020] shadow-[0_10px_40px_-10px_rgba(0,0,0,0.2)] backdrop-blur-xl">
+      <div className="mx-auto flex w-fit items-center gap-20 rounded-full border border-[#0e1020]/10 bg-[#efdfe7] px-2 py-2 text-[#0e1020] shadow-[0_10px_40px_-10px_rgba(0,0,0,0.2)] backdrop-blur-xl">
         <Link
           to="/"
           className="flex items-center pl-2"
