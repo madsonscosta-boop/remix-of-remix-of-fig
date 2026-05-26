@@ -31,7 +31,7 @@ function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed inset-x-0 top-4 z-50 px-4">
-      <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-[#0e1020]/10 bg-[#efdfe7] px-2 py-2 text-[#0e1020] shadow-[0_10px_40px_-10px_rgba(0,0,0,0.2)] backdrop-blur-xl">
+      <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-ink/10 bg-cream px-2 py-2 text-ink shadow-[0_10px_40px_-10px_rgba(0,0,0,0.2)] backdrop-blur-xl">
         <Link
           to="/"
           className="flex items-center pl-2"
@@ -47,7 +47,7 @@ function Header() {
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="flex h-9 w-9 items-center justify-center rounded-full text-[#0e1020]/80 transition hover:bg-[#0e1020]/10 hover:text-[#0e1020]"
+          className="flex h-9 w-9 items-center justify-center rounded-full text-ink/80 transition hover:bg-ink/10 hover:text-ink"
         >
           {open ? <X size={18} /> : <Menu size={18} />}
         </button>
