@@ -83,7 +83,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/biennale/video-2.mp4",
     ],
     credits: "Video and audio by Jeff Hoogendijk\nScript by FIG Agency",
-  },
+    highlights: ["0 → 6,000 followers", "Sold-out launch edition"],
   {
     slug: "estadio",
     title: "Wasteland - Festival of Art & Ecology",
