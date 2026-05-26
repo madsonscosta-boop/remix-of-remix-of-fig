@@ -16,12 +16,12 @@ export default function PortfolioDetail() {
   const others = portfolioItems.filter((p) => p.slug !== item.slug).slice(0, 4);
 
   return (
-    <article className="bg-cream">
+    <article className="bg-[#fff4f7]">
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
-        <Link to="/" className="text-sm text-ink/70 hover:text-ink">← Back</Link>
-        <p className="mt-6 font-display text-sm uppercase tracking-widest text-ink/60 whitespace-pre-line">{item.category}</p>
-        <h1 className="mt-3 font-display text-5xl leading-tight text-ink md:text-6xl">{item.title}</h1>
-        <p className="mt-4 whitespace-pre-line text-lg text-ink/80 font-sans">{item.summary}</p>
+        <Link to="/" className="text-sm text-[#0E1020]/70 hover:text-[#0E1020]">← Back</Link>
+        <p className="mt-6 font-display text-sm uppercase tracking-widest text-[#0E1020]/60 whitespace-pre-line">{item.category}</p>
+        <h1 className="mt-3 font-display text-5xl leading-tight text-[#0E1020] md:text-6xl">{item.title}</h1>
+        <p className="mt-4 whitespace-pre-line text-lg text-[#0E1020]/80 font-sans">{item.summary}</p>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-16">

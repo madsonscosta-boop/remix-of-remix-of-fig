@@ -6,20 +6,20 @@ export default function Privacy() {
   }, []);
 
   return (
-    <section className="mx-auto max-w-3xl px-6 py-32 text-ink">
+    <section className="mx-auto max-w-3xl px-6 py-32 text-[#0e1020]">
       <h1 className="font-display text-4xl leading-tight md:text-5xl">Política de Privacidade</h1>
-      <p className="mt-4 text-sm text-ink/60">Última atualização: maio de 2026</p>
+      <p className="mt-4 text-sm text-[#0e1020]/60">Última atualização: maio de 2026</p>
 
-      <div className="mt-12 space-y-10 text-base leading-relaxed text-ink/80">
+      <div className="mt-12 space-y-10 text-base leading-relaxed text-[#0e1020]/80">
         <div>
-          <h2 className="font-display text-2xl text-ink">1. Introdução</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">1. Introdução</h2>
           <p className="mt-3">
             A FIG The Agency ("nós", "nosso" ou "a Agência") valoriza a privacidade dos seus dados. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos suas informações pessoais ao utilizar nossos serviços, site e plataformas digitais.
           </p>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">2. Dados que Coletamos</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">2. Dados que Coletamos</h2>
           <p className="mt-3">
             Podemos coletar os seguintes tipos de dados:
           </p>
@@ -32,7 +32,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">3. Como Usamos seus Dados</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">3. Como Usamos seus Dados</h2>
           <p className="mt-3">
             Utilizamos suas informações para:
           </p>
@@ -46,7 +46,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">4. Compartilhamento de Dados</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">4. Compartilhamento de Dados</h2>
           <p className="mt-3">
             Não vendemos seus dados pessoais. Podemos compartilhá-los apenas com:
           </p>
@@ -58,21 +58,21 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">5. Cookies e Tecnologias de Rastreamento</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">5. Cookies e Tecnologias de Rastreamento</h2>
           <p className="mt-3">
             Nosso site utiliza cookies para melhorar sua experiência, analisar tráfego e personalizar conteúdo. Você pode gerenciar suas preferências de cookies diretamente no navegador.
           </p>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">6. Segurança dos Dados</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">6. Segurança dos Dados</h2>
           <p className="mt-3">
             Adotamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado, alteração, divulgação ou destruição. Isso inclui criptografia, firewalls e controles de acesso restrito.
           </p>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">7. Seus Direitos</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">7. Seus Direitos</h2>
           <p className="mt-3">
             De acordo com a legislação aplicável (incluindo a LGPD no Brasil e o GDPR na Europa), você tem o direito de:
           </p>
@@ -86,33 +86,33 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">8. Retenção dos Dados</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">8. Retenção dos Dados</h2>
           <p className="mt-3">
             Mantemos seus dados apenas pelo tempo necessário para cumprir as finalidades descritas nesta política ou conforme exigido por obrigações legais, contratuais e fiscais.
           </p>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">9. Alterações nesta Política</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">9. Alterações nesta Política</h2>
           <p className="mt-3">
             Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos sobre mudanças significativas por e-mail ou através de aviso em nosso site.
           </p>
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-ink">10. Contato</h2>
+          <h2 className="font-display text-2xl text-[#0e1020]">10. Contato</h2>
           <p className="mt-3">
             Se tiver dúvidas sobre esta Política de Privacidade ou desejar exercer seus direitos, entre em contato conosco:
           </p>
           <p className="mt-3">
             <strong>E-mail:</strong>{" "}
-            <a href="mailto:hello@figtheagency.com" className="underline transition hover:text-coral">
+            <a href="mailto:hello@figtheagency.com" className="underline transition hover:text-[#6f64ff]">
               hello@figtheagency.com
             </a>
           </p>
           <p className="mt-1">
             <strong>Instagram:</strong>{" "}
-            <a href="https://www.instagram.com/figtheagency" className="underline transition hover:text-coral">
+            <a href="https://www.instagram.com/figtheagency" className="underline transition hover:text-[#6f64ff]">
               @figtheagency
             </a>
           </p>
