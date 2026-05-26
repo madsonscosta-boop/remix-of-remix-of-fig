@@ -34,7 +34,7 @@ export default function Index() {
 
           <div className="mt-24 rounded-3xl px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20" style={{ backgroundColor: "#6f64ff" }}>
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
-              A creative agency for brands ready to grow.
+              Grow where it matters.
             </p>
             <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
               We help brands build recognition, create relevant content, and cultivate engaged communities through strategic digital marketing.
