@@ -56,7 +56,7 @@ export default function Index() {
             <Link
               key={img.slug}
               to={`/portfolio/${img.slug}`}
-              className={`group overflow-hidden rounded-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"} ${img.cls}`}
+              className={`group relative overflow-hidden rounded-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"} ${img.cls}`}
               aria-label={`View project: ${img.title}`}
             >
               {img.coverVideo ? (
@@ -64,6 +64,9 @@ export default function Index() {
               ) : (
                 <img src={img.src} alt={img.alt} loading="lazy" className={`h-full w-full ${img.fit === "contain" ? "object-contain p-6" : "object-cover"} transition duration-500 group-hover:scale-105`} />
               )}
+              <div className="absolute inset-0 flex items-center justify-center bg-[#1a1a2e]/60 opacity-0 transition duration-500 group-hover:opacity-100">
+                <span className="font-display text-2xl text-cream md:text-3xl">{img.title}</span>
+              </div>
             </Link>
           ))}
         </div>
