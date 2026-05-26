@@ -101,7 +101,7 @@ export default function Index() {
       {/* QUOTE / SHOWCASE */}
       <section className="border-t border-[#0E4C5A]/40 bg-[#D8D3C9] text-[#1a1a2e]">
         <div className="mx-auto max-w-7xl px-6 py-28">
-          <span aria-hidden className="block font-display text-7xl leading-none text-[#FF7A3D]">"</span>
+          <span aria-hidden className="block font-display text-7xl leading-none text-[#6f64ff]">"</span>
           <p className="mt-4 font-display text-2xl leading-tight md:text-4xl">
             Working with FIG made a huge difference, my Instagram grew from 400 to 1,395 followers, the workshops sold out, and I felt comfortable in front of cameras, even getting invited to TV; Professional and dedicated support. Highly recommend!
           </p>
