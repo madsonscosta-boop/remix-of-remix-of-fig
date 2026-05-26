@@ -87,7 +87,8 @@ export const portfolioItems: PortfolioItem[] = [
     client: "Client soon",
     category: "TAGS: COMMUNICATION STRATEGY · SOCIAL MEDIA MANAGEMENT · CONTENT PLANNING · COMMUNITY BUILDING\n\n ",
     summary:
-      "The brief: Wasteland is a Rotterdam collective working at the intersection of art and ecology — exhibitions, performances, field trips, workshops. They needed someone to take over their communications and make a complex, fragmented program feel alive and accessible online. Our approach: Hired as communication managers across Instagram, website, and external communications. We coordinated content from 20+ artists and collaborators across a full season, working with a graphic designer on visual templates and consistency. The result: A season of programming communicated clearly, with a growing and engaged community. Instagram became a genuine reflection of the organization — not just a bulletin board.\n\nGraphic design by Martin Foucaut\n",
+      "The brief: Wasteland is a Rotterdam collective working at the intersection of art and ecology — exhibitions, performances, field trips, workshops. They needed someone to take over their communications and make a complex, fragmented program feel alive and accessible online. Our approach: Hired as communication managers across Instagram, website, and external communications. We coordinated content from 20+ artists and collaborators across a full season, working with a graphic designer on visual templates and consistency. The result: A season of programming communicated clearly, with a growing and engaged community. Instagram became a genuine reflection of the organization — not just a bulletin board.",
+    credits: "Graphic design by Martin Foucaut",
     src: "/portfolio/wasteland/cover.png",
     alt: "Wasteland - Out of Sight",
     cls: "md:col-span-1 md:row-span-1 aspect-[4/5]",
