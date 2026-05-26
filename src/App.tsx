@@ -77,17 +77,17 @@ function Header() {
 
 function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#0e1020] text-white">
+    <footer className="border-t border-cream/10 bg-ink text-cream">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-5">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
             <img src={logo} alt="FIG" className="h-10 w-auto" />
           </div>
-          <p className="mt-4 max-w-sm text-sm text-white/70">For brands ready to grow.</p>
+          <p className="mt-4 max-w-sm text-sm text-cream/70">For brands ready to grow.</p>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-white/60">Navigate</p>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
+          <p className="text-xs uppercase tracking-widest text-cream/60">Navigate</p>
+          <ul className="mt-4 space-y-2 text-sm text-cream/80">
             <li><Link to="/#services" className="transition hover:text-brand-glow">Services</Link></li>
             <li><Link to="/#portfolio" className="transition hover:text-brand-glow">Works</Link></li>
             <li><Link to="/about" className="transition hover:text-brand-glow">About</Link></li>
@@ -95,21 +95,21 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-white/60">Contact</p>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
+          <p className="text-xs uppercase tracking-widest text-cream/60">Contact</p>
+          <ul className="mt-4 space-y-2 text-sm text-cream/80">
             <li><a href="mailto:hello@figtheagency.com" className="transition hover:text-brand-glow">hello@figtheagency.com</a></li>
             <li><a href="https://www.instagram.com/figtheagency" className="transition hover:text-brand-glow">@figtheagency</a></li>
           </ul>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-white/60">Legal</p>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
+          <p className="text-xs uppercase tracking-widest text-cream/60">Legal</p>
+          <ul className="mt-4 space-y-2 text-sm text-cream/80">
             <li><Link to="/privacy" className="transition hover:text-brand-glow">Privacy Policy</Link></li>
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-xs text-white/60">
+      <div className="border-t border-cream/10">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-xs text-cream/60">
           <span>© {new Date().getFullYear()} FIG. All rights reserved.</span>
           <span>Made with love, in Rotterdam</span>
         </div>
