@@ -99,7 +99,7 @@ export default function Index() {
       </section>
 
       {/* QUOTE / SHOWCASE */}
-      <section className="border-t border-[#0E4C5A]/40 bg-[#1a1a2e] text-[#EFE7DA]">
+      <section className="border-t border-[#0E4C5A]/40 bg-[#2d2d4a] text-[#EFE7DA]">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <span aria-hidden className="block font-display text-7xl leading-none text-[#FF7A3D]">"</span>
           <p className="mt-4 font-display text-2xl leading-tight md:text-4xl">
