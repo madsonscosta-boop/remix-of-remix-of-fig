@@ -99,16 +99,17 @@ export default function Index() {
       </section>
 
       {/* QUOTE / SHOWCASE */}
-      <section className="border-t border-border/40 bg-[#f5f5f7] text-[#0e1020]">
+      <section className="border-t border-[#f0d78c]/20 bg-[#1a1a2e] text-[#fafbfc]">
         <div className="mx-auto max-w-7xl px-6 py-28">
-          <p className="font-display text-2xl leading-tight md:text-4xl">
-            "Working with FIG made a huge difference, my Instagram grew from 400 to 1,395 followers, the workshops sold out, and I felt comfortable in front of cameras, even getting invited to TV; Professional and dedicated support. Highly recommend!"
+          <span aria-hidden className="block font-display text-7xl leading-none text-[#f0d78c]">"</span>
+          <p className="mt-4 font-display text-2xl leading-tight md:text-4xl">
+            Working with FIG made a huge difference, my Instagram grew from 400 to 1,395 followers, the workshops sold out, and I felt comfortable in front of cameras, even getting invited to TV; Professional and dedicated support. Highly recommend!
           </p>
           <div className="mt-10 flex items-center gap-4">
-            <div className="h-12 w-12 rounded-full bg-cream" />
+            <div className="h-12 w-12 rounded-full bg-[#f0d78c]" />
             <div>
-              <p className="font-medium">Oficina Amor</p>
-              <p className="text-sm text-[#0e1020]/60">Head of Growth</p>
+              <p className="font-medium text-[#f0d78c]">Oficina Amor</p>
+              <p className="text-sm text-[#fafbfc]/60">Head of Growth</p>
             </div>
           </div>
         </div>
@@ -116,28 +117,28 @@ export default function Index() {
 
       {/* CTA — Email (no backend) */}
       <section id="contact" className="bg-cream px-6 py-20 scroll-mt-24">
-        <div className="mx-auto max-w-6xl rounded-3xl bg-background px-6 py-16 text-[#6f64ff] md:px-16 md:py-20">
+        <div className="mx-auto max-w-6xl rounded-3xl bg-[#1a1a2e] px-6 py-16 text-[#fafbfc] md:px-16 md:py-20">
           <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
             Like what you see?
             <br />
-            Let's make it happen!
+            <span className="text-[#f0d78c]">Let's make it happen!</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#6f64ff]/80">
+          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#fafbfc]/70">
             Send an email and we'll get back to you shortly.
           </p>
 
           <div className="mx-auto mt-12 max-w-md">
             <a
               href={mailtoLink()}
-              className="block rounded-full bg-[#6f64ff] px-8 py-5 text-center text-base font-semibold text-white shadow-lg shadow-[#6f64ff]/30 transition hover:bg-[#5a50e6] hover:scale-105 hover:shadow-xl"
+              className="block rounded-full bg-[#6f64ff] px-8 py-5 text-center text-base font-semibold text-white shadow-lg shadow-[#6f64ff]/40 transition hover:bg-[#5a50e6] hover:scale-105 hover:shadow-xl"
             >
               Send email
             </a>
           </div>
 
-          <p className="mt-6 text-center text-sm text-[#6f64ff]/70">
+          <p className="mt-6 text-center text-sm text-[#fafbfc]/60">
             or write to{" "}
-            <a href={mailtoLink()} className="underline">{EMAIL}</a>
+            <a href={mailtoLink()} className="underline decoration-[#f0d78c] underline-offset-4 hover:text-[#f0d78c]">{EMAIL}</a>
           </p>
         </div>
       </section>
