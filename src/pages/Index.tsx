@@ -17,15 +17,13 @@ function shuffle<T>(arr: T[]): T[] {
 export default function Index() {
   const shuffledItems = useMemo(() => {
     const items = shuffle(portfolioItems);
-    // Subtle size variation: most items are standard 4/5; a couple get slightly taller/shorter
-    const aspectPool = shuffle(["4/5", "4/5", "3/4", "4/5", "1/1"]);
-    return items.map((item, i) => ({
+    return items.map((item) => ({
       item,
-      aspect: aspectPool[i % aspectPool.length],
       floatDelay: Math.random() * 2,
       floatDuration: 5 + Math.random() * 3,
     }));
   }, []);
+
 
 
   return (
