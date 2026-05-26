@@ -171,3 +171,30 @@
     letter-spacing: -0.02em;
   }
 }
+
+@keyframes highlight-sweep {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes highlight-pop {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-1px) scale(1.03); }
+}
+
+.highlight-chip {
+  display: inline-block;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0.05em 0.5em;
+  border-radius: 0.4em;
+  background: linear-gradient(90deg, #6B3FA0 0%, #9B6BD8 50%, #6B3FA0 100%);
+  background-size: 200% 100%;
+  box-shadow: 0 6px 18px -8px rgba(107, 63, 160, 0.6);
+  animation: highlight-sweep 6s linear infinite, highlight-pop 3s ease-in-out infinite;
+  transition: transform 0.25s ease;
+}
+
+.highlight-chip:hover {
+  transform: translateY(-2px) scale(1.05);
+}
