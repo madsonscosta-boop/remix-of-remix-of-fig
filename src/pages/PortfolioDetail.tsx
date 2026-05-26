@@ -3,19 +3,55 @@ import { getPortfolioItem, portfolioItems, type PortfolioItem } from "@/lib/port
 import { usePageMeta } from "@/hooks/usePageMeta";
 import NotFound from "./NotFound";
 
-function renderSummary(item: PortfolioItem) {
-  const text = item.summary;
-  const highlights = item.highlights ?? [];
-  if (highlights.length === 0) return text;
+function highlightText(text: string, highlights: string[]) {
+  if (!highlights.length) return text;
   const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const pattern = new RegExp(`(${highlights.map(escape).join("|")})`, "gi");
-  const parts = text.split(pattern);
-  return parts.map((part, i) =>
+  return text.split(pattern).map((part, i) =>
     highlights.some((h) => h.toLowerCase() === part.toLowerCase()) ? (
       <span key={i} className="highlight-chip">{part}</span>
     ) : (
       <span key={i}>{part}</span>
     )
+  );
+}
+
+function renderSummary(item: PortfolioItem) {
+  const highlights = item.highlights ?? [];
+  // Split text into sections by labels like "The brief:", "Our approach:", "The result:"
+  const labelRegex = /(The brief:|Our approach:|The result:)/g;
+  const tokens = item.summary.split(labelRegex).filter((t) => t.trim() !== "");
+
+  // If no labels found, just render plain
+  if (!labelRegex.test(item.summary)) {
+    return (
+      <p className="whitespace-pre-line text-lg leading-relaxed text-[#0E1020]/80 font-sans">
+        {highlightText(item.summary, highlights)}
+      </p>
+    );
+  }
+
+  const sections: { label: string; body: string }[] = [];
+  for (let i = 0; i < tokens.length; i++) {
+    if (/The brief:|Our approach:|The result:/.test(tokens[i])) {
+      sections.push({ label: tokens[i].replace(":", ""), body: (tokens[i + 1] ?? "").trim() });
+      i++;
+    }
+  }
+
+  return (
+    <div className="space-y-8">
+      {sections.map((s, idx) => (
+        <div key={idx}>
+          <h2 className="font-display text-xs uppercase tracking-[0.2em] text-[#6B2BD9] mb-3">
+            {s.label}
+          </h2>
+          <p className="whitespace-pre-line text-lg leading-relaxed text-[#0E1020]/85 font-sans">
+            {highlightText(s.body, highlights)}
+          </p>
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -33,11 +69,14 @@ export default function PortfolioDetail() {
 
   return (
     <article className="bg-[#fff4f7]">
-      <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
+      <section className="mx-auto max-w-6xl px-6 pt-16 pb-12">
         <Link to="/" className="text-sm text-[#0E1020]/70 hover:text-[#0E1020]">← Back</Link>
-        <p className="mt-6 font-display text-sm uppercase tracking-widest text-[#0E1020]/60 whitespace-pre-line">{item.category}</p>
-        <h1 className="mt-3 font-display text-5xl leading-tight text-[#0E1020] md:text-6xl">{item.title}</h1>
-        <p className="mt-4 whitespace-pre-line text-lg leading-relaxed text-[#0E1020]/80 font-sans">{renderSummary(item)}</p>
+        <p className="mt-8 font-display text-[11px] uppercase tracking-[0.25em] text-[#0E1020]/50 whitespace-pre-line">{item.category}</p>
+        <h1 className="mt-4 font-display text-6xl leading-[1.05] tracking-tight text-[#6B2BD9] md:text-7xl">
+          {item.title}
+        </h1>
+        <div className="mt-3 h-1 w-16 bg-[#6B2BD9] rounded-full" />
+        <div className="mt-10 max-w-3xl">{renderSummary(item)}</div>
       </section>
 
 
