@@ -74,7 +74,7 @@ export default function Index() {
 
       {/* GALLERY MOSAIC */}
       <section id="portfolio" className="bg-cream px-6 pt-20">
-        <div className="mx-auto grid max-w-[80rem] auto-rows-auto grid-flow-dense grid-cols-2 gap-4 md:grid-cols-6 md:gap-6">
+        <div className="mx-auto grid max-w-[68rem] auto-rows-auto grid-flow-dense grid-cols-2 gap-4 md:grid-cols-6 md:gap-5">
           {shuffledItems.map(({ item: img, colSpan, floatDelay, floatDuration }, i) => {
             const spanClass =
               colSpan === 2
