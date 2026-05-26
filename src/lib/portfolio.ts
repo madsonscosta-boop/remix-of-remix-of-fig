@@ -65,6 +65,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/ori-mart/video-2.mp4",
       "/portfolio/ori-mart/video-3.mp4",
     ],
+    highlights: ["+41% followers", "272K+ views", "97K reel", "€0.05 CPC"],
   },
   {
     slug: "esporte",
