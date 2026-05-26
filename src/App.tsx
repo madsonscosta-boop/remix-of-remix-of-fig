@@ -102,10 +102,9 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-white/60">Legal</p>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
-            <li><Link to="/privacy" className="transition hover:text-brand-glow">Privacy Policy</Link></li>
-          </ul>
+          <button className="rounded-full bg-brand px-6 py-2 text-xs uppercase tracking-widest text-white transition hover:bg-brand-glow">
+            <Link to="/privacy" className="text-white">PRIVACY</Link>
+          </button>
         </div>
       </div>
       <div className="border-t border-white/10">
