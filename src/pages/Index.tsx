@@ -108,7 +108,7 @@ export default function Index() {
             <div className="h-12 w-12 rounded-full bg-cream" />
             <div>
               <p className="font-medium">Oficina Amor</p>
-              <p className="text-sm text-primary-foreground/70">Head of Growth</p>
+              <p className="text-sm text-[#0e1020]/60">Head of Growth</p>
             </div>
           </div>
         </div>
