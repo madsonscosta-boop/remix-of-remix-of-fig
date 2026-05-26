@@ -1,7 +1,23 @@
 import { Link, useParams } from "react-router-dom";
-import { getPortfolioItem, portfolioItems } from "@/lib/portfolio";
+import { getPortfolioItem, portfolioItems, type PortfolioItem } from "@/lib/portfolio";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import NotFound from "./NotFound";
+
+function renderSummary(item: PortfolioItem) {
+  const text = item.summary;
+  const highlights = item.highlights ?? [];
+  if (highlights.length === 0) return text;
+  const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(`(${highlights.map(escape).join("|")})`, "gi");
+  const parts = text.split(pattern);
+  return parts.map((part, i) =>
+    highlights.some((h) => h.toLowerCase() === part.toLowerCase()) ? (
+      <span key={i} className="highlight-chip">{part}</span>
+    ) : (
+      <span key={i}>{part}</span>
+    )
+  );
+}
 
 export default function PortfolioDetail() {
   const { slug = "" } = useParams();
