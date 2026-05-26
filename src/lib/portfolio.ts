@@ -14,6 +14,7 @@ export type PortfolioItem = {
   coverVideo?: string;
   fit?: "cover" | "contain";
   credits?: string;
+  highlights?: string[];
 };
 
 export const portfolioItems: PortfolioItem[] = [
