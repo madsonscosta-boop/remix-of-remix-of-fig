@@ -75,21 +75,14 @@ export default function Index() {
 
       {/* GALLERY MOSAIC */}
       <section id="portfolio" className="bg-cream px-6 pt-20">
-        <div className="mx-auto grid max-w-[68rem] auto-rows-auto grid-flow-dense grid-cols-2 gap-4 md:grid-cols-6 md:gap-5">
-          {shuffledItems.map(({ item: img, colSpan, floatDelay, floatDuration }, i) => {
-            const spanClass =
-              colSpan === 2
-                ? "md:col-span-2"
-                : colSpan === 3
-                ? "md:col-span-3"
-                : "md:col-span-4";
+        <div className="mx-auto grid max-w-[68rem] grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
+          {shuffledItems.map(({ item: img, aspect, floatDelay, floatDuration }, i) => {
             return (
               <motion.div
                 key={img.slug}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className={`${spanClass}`}
               >
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
