@@ -130,7 +130,7 @@ export default function Index() {
           <div className="mx-auto mt-12 max-w-md">
             <a
               href={mailtoLink()}
-              className="block rounded-full bg-[#6f64ff] px-8 py-5 text-center text-base font-semibold text-white shadow-lg shadow-[#6f64ff]/40 transition hover:bg-[#FF7A3D] hover:scale-105 hover:shadow-xl hover:shadow-[#FF7A3D]/40"
+              className="block rounded-full bg-[#6f64ff] px-8 py-5 text-center text-base font-semibold text-white shadow-lg shadow-[#6f64ff]/40 transition hover:bg-[#5a50e6] hover:scale-105 hover:shadow-xl hover:shadow-[#6f64ff]/40"
             >
               Send email
             </a>
@@ -138,7 +138,7 @@ export default function Index() {
 
           <p className="mt-6 text-center text-sm text-[#D8D3C9]">
             or write to{" "}
-            <a href={mailtoLink()} className="underline decoration-[#FF7A3D] underline-offset-4 hover:text-[#f0d78c]">{EMAIL}</a>
+            <a href={mailtoLink()} className="underline decoration-[#6f64ff] underline-offset-4 hover:text-[#f0d78c]">{EMAIL}</a>
           </p>
         </div>
       </section>
