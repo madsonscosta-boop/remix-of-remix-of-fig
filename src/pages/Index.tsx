@@ -165,7 +165,7 @@ export default function Index() {
           <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
             Like what you see?
             <br />
-            <span className="text-[#f0d78c]">Let's make it happen!</span>
+            <span>Let's make it happen!</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#D8D3C9]">
             Send an email and we'll get back to you shortly.
