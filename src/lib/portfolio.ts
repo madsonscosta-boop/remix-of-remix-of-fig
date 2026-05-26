@@ -82,6 +82,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/biennale/video-1.mp4",
       "/portfolio/biennale/video-2.mp4",
     ],
+    fit: "contain",
     credits: "Video and audio by Jeff Hoogendijk\nScript by FIG Agency",
     highlights: ["0 to 6,000 followers"],
   },

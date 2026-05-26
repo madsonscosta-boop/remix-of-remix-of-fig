@@ -110,9 +110,9 @@ export default function PortfolioDetail() {
         ) : (
           <div className={`grid grid-cols-1 gap-4 ${item.videos && item.videos.length === 2 ? "sm:grid-cols-2" : "sm:grid-cols-3"}`}>
             {(item.videos ?? [null, null, null]).map((src, i) => (
-              <div key={i} className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-background">
+              <div key={i} className={`relative overflow-hidden rounded-3xl bg-background ${item.fit === "contain" ? "aspect-video" : "aspect-[9/16]"}`}>
                 {src ? (
-                  <video className="h-full w-full object-cover" playsInline muted loop autoPlay preload="metadata" aria-label={`${item.title} — video ${i + 1}`}>
+                  <video className={`h-full w-full ${item.fit === "contain" ? "object-contain" : "object-cover"}`} playsInline muted loop autoPlay preload="metadata" aria-label={`${item.title} — video ${i + 1}`}>
                     <source src={src} type="video/mp4" />
                   </video>
                 ) : (
