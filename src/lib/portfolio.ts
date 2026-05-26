@@ -34,7 +34,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/marca-alimentacao/video-1.mp4",
       "/portfolio/marca-alimentacao/video-2.mp4",
     ],
-    highlights: ["+1000 followers", "Workshops sold out"],
+    highlights: ["over 1,000 followers", "sold out"],
   },
   {
     slug: "hanno",
