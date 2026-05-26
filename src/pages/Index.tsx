@@ -32,14 +32,14 @@ export default function Index() {
           <div className="mx-auto max-w-7xl px-6">
 
 
-          <div className="mt-24 rounded-3xl px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20" style={{ backgroundColor: "#6f64ff" }}>
+          <div className="mt-24 rounded-3xl px-8 py-16 text-center text-ink md:px-16 md:py-20 bg-cream border border-ink/10">
             <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
               Grow where it matters.
             </p>
             <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
               We help brands build recognition, create relevant content, and cultivate engaged communities through strategic digital marketing.
             </p>
-            <Link to="/#contact" className="mt-10 inline-flex flex-col items-center rounded-full border border-primary-foreground/70 px-8 py-3 text-sm leading-tight transition hover:bg-primary-foreground/10">
+            <Link to="/#contact" className="mt-10 inline-flex flex-col items-center rounded-full border border-ink/40 px-8 py-3 text-sm leading-tight text-ink transition hover:bg-ink/5">
               <span>Like what you see?</span>
               <span>Let's talk!</span>
             </Link>
@@ -99,16 +99,16 @@ export default function Index() {
       </section>
 
       {/* QUOTE / SHOWCASE */}
-      <section className="border-t border-border/40 bg-[#0e1020] text-primary-foreground">
+      <section className="border-t border-border/40 bg-cream text-ink">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <p className="font-display text-2xl leading-tight md:text-4xl">
             "Working with FIG made a huge difference. My Instagram grew from 400 to 1,395 followers, the workshops sold out, and I felt comfortable in front of cameras — even getting invited to TV. Professional and dedicated support. Highly recommend!"
           </p>
           <div className="mt-10 flex items-center gap-4">
-            <div className="h-12 w-12 rounded-full bg-cream" />
+            <div className="h-12 w-12 rounded-full bg-background border border-ink/10" />
             <div>
               <p className="font-medium">Oficina Amor</p>
-              <p className="text-sm text-primary-foreground/70">Head of Growth</p>
+              <p className="text-sm text-ink/70">Head of Growth</p>
             </div>
           </div>
         </div>
@@ -116,26 +116,26 @@ export default function Index() {
 
       {/* CTA — Email (no backend) */}
       <section id="contact" className="bg-cream px-6 py-20 scroll-mt-24">
-        <div className="mx-auto max-w-6xl rounded-3xl bg-background px-6 py-16 text-[#6f64ff] md:px-16 md:py-20">
+        <div className="mx-auto max-w-6xl rounded-3xl bg-background px-6 py-16 text-brand md:px-16 md:py-20 border border-ink/10">
           <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
             Like what you see?
             <br />
             Let's make it happen!
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#6f64ff]/80">
+          <p className="mx-auto mt-6 max-w-xl text-center text-base text-brand/80">
             Send an email and we'll get back to you shortly.
           </p>
 
           <div className="mx-auto mt-12 max-w-md">
             <a
               href={mailtoLink()}
-              className="block rounded-full bg-[#6f64ff] px-8 py-5 text-center text-base font-semibold text-white shadow-lg shadow-[#6f64ff]/30 transition hover:bg-[#5a50e6] hover:scale-105 hover:shadow-xl"
+              className="block rounded-full bg-coral px-8 py-5 text-center text-base font-semibold text-white shadow-lg shadow-coral/30 transition hover:bg-coral/90 hover:scale-105 hover:shadow-xl"
             >
               Send email
             </a>
           </div>
 
-          <p className="mt-6 text-center text-sm text-[#6f64ff]/70">
+          <p className="mt-6 text-center text-sm text-brand/70">
             or write to{" "}
             <a href={mailtoLink()} className="underline">{EMAIL}</a>
           </p>
