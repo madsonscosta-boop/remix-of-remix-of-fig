@@ -68,6 +68,9 @@ export default function PortfolioDetail() {
             ))}
           </div>
         )}
+        {item.credits && (
+          <p className="mt-6 whitespace-pre-line text-sm text-[#0E1020]/60 font-sans">{item.credits}</p>
+        )}
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
