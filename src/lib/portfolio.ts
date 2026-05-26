@@ -98,7 +98,7 @@ export const portfolioItems: PortfolioItem[] = [
     credits: "Graphic design by Martin Foucaut",
     src: "/portfolio/wasteland/cover.png",
     alt: "Wasteland - Out of Sight",
-    cls: "", aspect: "9/16",
+    cls: "", aspect: "898/318", fit: "contain",
     images: [
       "/portfolio/wasteland/image-1.jpeg",
       "/portfolio/wasteland/image-2.jpeg",
