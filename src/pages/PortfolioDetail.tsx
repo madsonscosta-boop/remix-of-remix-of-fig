@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { getPortfolioItem, portfolioItems, type PortfolioItem } from "@/lib/portfolio";
+import { getPortfolioItem, portfolioItems, parseTags, type PortfolioItem } from "@/lib/portfolio";
 import { usePageMeta } from "@/hooks/usePageMeta";
 import NotFound from "./NotFound";
 
@@ -71,7 +71,13 @@ export default function PortfolioDetail() {
     <article className="bg-[#fff4f7]">
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-12">
         <Link to="/" className="text-sm text-[#0E1020]/70 hover:text-[#0E1020]">← Back</Link>
-        <p className="mt-8 font-display text-[11px] uppercase tracking-[0.25em] text-[#0E1020]/50 whitespace-pre-line">{item.category}</p>
+        <div className="mt-8 flex flex-wrap gap-2">
+          {parseTags(item.category).map((tag) => (
+            <span key={tag} className="rounded-full bg-[#6B2BD9]/10 px-3 py-1 text-[10px] font-display uppercase tracking-wider text-[#6B2BD9]">
+              {tag}
+            </span>
+          ))}
+        </div>
         <h1 className="mt-4 font-display text-6xl leading-[1.05] tracking-tight text-[#6B2BD9] md:text-7xl">
           {item.title}
         </h1>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { portfolioItems } from "@/lib/portfolio";
+import { portfolioItems, parseTags } from "@/lib/portfolio";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
 export default function Trabalhos() {
@@ -44,7 +44,13 @@ export default function Trabalhos() {
             {portfolioItems.map((p) => (
               <Link key={p.slug} to={`/portfolio/${p.slug}`} className="group grid grid-cols-1 gap-4 py-8 transition md:grid-cols-12 md:items-center">
                 <p className="font-display text-2xl text-brand md:col-span-4 md:text-3xl">{p.title}</p>
-                <p className="text-xs uppercase tracking-wider text-brand/60 md:col-span-6">{p.category.split("\n")[0]}</p>
+                <div className="flex flex-wrap gap-2 md:col-span-6">
+                  {parseTags(p.category).map((tag) => (
+                    <span key={tag} className="rounded-full bg-brand/10 px-3 py-1 text-[10px] font-display uppercase tracking-wider text-brand/80">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
                 <span className="text-sm text-brand transition group-hover:translate-x-1 md:col-span-2 md:text-right">View project →</span>
               </Link>
             ))}
