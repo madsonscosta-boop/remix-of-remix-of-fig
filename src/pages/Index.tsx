@@ -109,7 +109,7 @@ export default function Index() {
             <div className="h-12 w-12 rounded-full bg-[#f0d78c]" />
             <div>
               <p className="font-medium text-[#f0d78c]">Oficina Amor</p>
-              <p className="text-sm text-[#fafbfc]/60">Head of Growth</p>
+              <p className="text-sm text-[#fafbfc]/80">Head of Growth</p>
             </div>
           </div>
         </div>
