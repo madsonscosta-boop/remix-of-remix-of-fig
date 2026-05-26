@@ -71,7 +71,7 @@ export default function Index() {
 
       {/* SERVICES */}
       <section id="services" className="bg-cream px-6 py-20 scroll-mt-24">
-        <div className="mx-auto max-w-7xl rounded-3xl bg-primary px-6 py-20 text-center md:px-16 md:py-24">
+        <div className="mx-auto max-w-7xl rounded-3xl bg-[#0055FF] px-6 py-20 text-center md:px-16 md:py-24">
           <h2 className="font-display text-4xl text-cream md:text-5xl">Our social media services</h2>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
