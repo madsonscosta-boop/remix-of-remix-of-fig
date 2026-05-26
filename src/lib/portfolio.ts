@@ -7,6 +7,7 @@ export type PortfolioItem = {
   src: string;
   alt: string;
   cls: string;
+  aspect: string;
   videos?: string[];
   images?: string[];
   layout?: "video-image-video";
