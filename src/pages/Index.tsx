@@ -99,7 +99,7 @@ export default function Index() {
       </section>
 
       {/* QUOTE / SHOWCASE */}
-      <section className="border-t border-border/40 bg-[#161a2e] text-primary-foreground">
+      <section className="border-t border-border/40 bg-[#f5f5f7] text-[#0e1020]">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <p className="font-display text-2xl leading-tight md:text-4xl">
             "Working with FIG made a huge difference, my Instagram grew from 400 to 1,395 followers, the workshops sold out, and I felt comfortable in front of cameras, even getting invited to TV; Professional and dedicated support. Highly recommend!"
@@ -108,7 +108,7 @@ export default function Index() {
             <div className="h-12 w-12 rounded-full bg-cream" />
             <div>
               <p className="font-medium">Oficina Amor</p>
-              <p className="text-sm text-primary-foreground/70">Head of Growth</p>
+              <p className="text-sm text-[#0e1020]/60">Head of Growth</p>
             </div>
           </div>
         </div>
