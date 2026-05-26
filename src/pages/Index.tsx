@@ -57,16 +57,16 @@ export default function Index() {
           <div className="mx-auto max-w-7xl px-6">
 
 
-          <div className="mt-24 rounded-3xl px-8 py-16 text-center text-primary-foreground md:px-16 md:py-20" style={{ backgroundColor: "#6f64ff" }}>
-            <p className="mx-auto max-w-3xl font-display text-3xl leading-snug md:text-4xl">
+          <div className="mt-24 rounded-3xl px-8 py-20 text-center text-primary-foreground md:px-16 md:py-28" style={{ backgroundColor: "#6f64ff" }}>
+            <p className="mx-auto max-w-4xl font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
               Grow where it matters.
             </p>
-            <p className="mx-auto mt-6 max-w-2xl font-display text-2xl leading-snug md:text-3xl">
+            <p className="mx-auto mt-8 max-w-2xl font-display text-lg font-light leading-relaxed text-primary-foreground/85 md:text-xl">
               We help brands build recognition, create relevant content, and cultivate engaged communities through strategic digital marketing.
             </p>
-            <Link to="/#contact" className="mt-10 inline-flex flex-col items-center rounded-full border border-primary-foreground/70 px-8 py-3 text-sm leading-tight transition hover:bg-primary-foreground/10">
+            <Link to="/#contact" className="mt-12 inline-flex flex-col items-center rounded-full border-2 border-primary-foreground bg-primary-foreground/5 px-12 py-6 font-display text-xl leading-tight transition hover:bg-primary-foreground hover:text-[#6f64ff] md:px-16 md:py-7 md:text-2xl">
               <span>Like what you see?</span>
-              <span>Let's talk!</span>
+              <span className="font-bold">Let's talk!</span>
             </Link>
           </div>
           </div>
