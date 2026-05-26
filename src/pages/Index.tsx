@@ -1,9 +1,32 @@
 import { Link } from "react-router-dom";
+import { useMemo } from "react";
+import { motion } from "framer-motion";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { portfolioItems } from "@/lib/portfolio";
 import { mailtoLink, EMAIL } from "@/lib/contact";
 
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function Index() {
+  const shuffledItems = useMemo(() => {
+    const items = shuffle(portfolioItems);
+    // Pool of column spans (out of 6) to create varied tile sizes
+    const spanPool = shuffle([2, 3, 2, 4, 3]);
+    return items.map((item, i) => ({
+      item,
+      colSpan: spanPool[i % spanPool.length],
+      floatDelay: Math.random() * 2,
+      floatDuration: 5 + Math.random() * 3,
+    }));
+  }, []);
+
   return (
     <>
       {/* HERO */}
@@ -51,26 +74,49 @@ export default function Index() {
 
       {/* GALLERY MOSAIC */}
       <section id="portfolio" className="bg-cream px-6 pt-20">
-        <div className="mx-auto grid max-w-[68rem] grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
-          {portfolioItems.map((img) => (
-            <Link
-              key={img.slug}
-              to={`/portfolio/${img.slug}`}
-              className={`group relative overflow-hidden rounded-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"} ${img.cls}`}
-              aria-label={`View project: ${img.title}`}
-            >
-              {img.coverVideo ? (
-                <video src={img.coverVideo} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" playsInline muted loop autoPlay preload="metadata" aria-label={img.alt} />
-              ) : (
-                <img src={img.src} alt={img.alt} loading="lazy" className={`h-full w-full ${img.fit === "contain" ? "object-contain p-6" : "object-cover"} transition duration-500 group-hover:scale-105`} />
-              )}
-              <div className="absolute inset-0 flex items-center justify-center bg-[#1a1a2e]/60 opacity-0 transition duration-500 group-hover:opacity-100">
-                <span className="font-display text-2xl text-cream md:text-3xl">{img.title}</span>
-              </div>
-            </Link>
-          ))}
+        <div className="mx-auto grid max-w-[80rem] auto-rows-auto grid-flow-dense grid-cols-2 gap-4 md:grid-cols-6 md:gap-6">
+          {shuffledItems.map(({ item: img, colSpan, floatDelay, floatDuration }, i) => {
+            const spanClass =
+              colSpan === 2
+                ? "md:col-span-2"
+                : colSpan === 3
+                ? "md:col-span-3"
+                : "md:col-span-4";
+            return (
+              <motion.div
+                key={img.slug}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                className={`${spanClass}`}
+              >
+                <motion.div
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: floatDuration, delay: floatDelay, repeat: Infinity, ease: "easeInOut" }}
+                  whileHover={{ scale: 1.03, rotate: -0.5, transition: { duration: 0.4 } }}
+                >
+                  <Link
+                    to={`/portfolio/${img.slug}`}
+                    style={{ aspectRatio: img.aspect.replace("/", " / ") }}
+                    className={`group relative block w-full overflow-hidden rounded-2xl shadow-md transition-shadow duration-500 hover:shadow-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"}`}
+                    aria-label={`View project: ${img.title}`}
+                  >
+                    {img.coverVideo ? (
+                      <video src={img.coverVideo} className={`h-full w-full ${img.fit === "contain" ? "object-contain" : "object-cover"} transition duration-700 group-hover:scale-110`} playsInline muted loop autoPlay preload="metadata" aria-label={img.alt} />
+                    ) : (
+                      <img src={img.src} alt={img.alt} loading="lazy" className={`h-full w-full ${img.fit === "contain" ? "object-contain p-4" : "object-cover"} transition duration-700 group-hover:scale-110`} />
+                    )}
+                    <div className="absolute inset-0 flex items-center justify-center bg-[#1a1a2e]/60 opacity-0 transition duration-500 group-hover:opacity-100">
+                      <span className="px-4 text-center font-display text-2xl text-cream md:text-3xl">{img.title}</span>
+                    </div>
+                  </Link>
+                </motion.div>
+              </motion.div>
+            );
+          })}
         </div>
       </section>
+
 
       {/* SERVICES */}
       <section id="services" className="bg-cream px-6 py-20 scroll-mt-24">
