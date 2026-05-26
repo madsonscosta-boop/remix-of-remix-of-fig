@@ -73,7 +73,7 @@ export const portfolioItems: PortfolioItem[] = [
     client: "Client soon",
     category: "TAGS: COMMUNICATION STRATEGY · SOCIAL MEDIA MANAGEMENT · CONTENT PLANNING · BRAND LAUNCH\n\n ",
     summary:
-      "The brief:  A inaugural design festival across 12 Rotterdam locations, with over 100 participating designers. No existing audience, no playbook. Built from scratch.   Our approach:  Hired as communication managers to build digital presence from the ground up. We developed Instagram strategy, managed day-to-day content, and coordinated visual production across 100+ designers and partners — working with a graphic designer to keep an extensive program feeling like one cohesive event.   The result:  From 0 to 6,000 followers for an account that didn't exist before launch. A community built around a strong enough inaugural edition to return for a second.",
+      "The brief:  \u00a0A inaugural design festival across 12 Rotterdam locations, with over 100 participating designers. No existing audience, no playbook. Built from scratch.   Our approach: Hired as communication managers to build digital presence from the ground up. We developed Instagram strategy, managed day-to-day content, and coordinated visual production across 100+ designers and partners \u2014 working with a graphic designer to keep an extensive program feeling like one cohesive event.  The result: From 0 to 6,000 followers for an account that didn't exist before launch. A community built around a strong enough inaugural edition to return for a second.",
     src: "/portfolio/biennale/cover.mp4",
     alt: "Design Biennale Rotterdam",
     cls: "md:col-span-1 md:row-span-1 md:col-start-2 aspect-[4/5]",
