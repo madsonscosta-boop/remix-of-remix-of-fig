@@ -74,7 +74,7 @@ export default function Index() {
       {/* GALLERY MOSAIC */}
       <section id="portfolio" className="bg-cream px-6 pt-20">
         <div className="mx-auto grid max-w-[68rem] grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
-          {shuffledItems.map(({ item: img, aspect, floatDelay, floatDuration }, i) => {
+          {shuffledItems.map(({ item: img, floatDelay, floatDuration }, i) => {
             return (
               <motion.div
                 key={img.slug}
