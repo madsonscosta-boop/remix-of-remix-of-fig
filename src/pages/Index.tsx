@@ -17,15 +17,13 @@ function shuffle<T>(arr: T[]): T[] {
 export default function Index() {
   const shuffledItems = useMemo(() => {
     const items = shuffle(portfolioItems);
-    // Subtle size variation: most items are standard 4/5; a couple get slightly taller/shorter
-    const aspectPool = shuffle(["4/5", "4/5", "3/4", "4/5", "1/1"]);
-    return items.map((item, i) => ({
+    return items.map((item) => ({
       item,
-      aspect: aspectPool[i % aspectPool.length],
       floatDelay: Math.random() * 2,
       floatDuration: 5 + Math.random() * 3,
     }));
   }, []);
+
 
 
   return (
@@ -76,7 +74,7 @@ export default function Index() {
       {/* GALLERY MOSAIC */}
       <section id="portfolio" className="bg-cream px-6 pt-20">
         <div className="mx-auto grid max-w-[68rem] grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
-          {shuffledItems.map(({ item: img, aspect, floatDelay, floatDuration }, i) => {
+          {shuffledItems.map(({ item: img, floatDelay, floatDuration }, i) => {
             return (
               <motion.div
                 key={img.slug}
@@ -91,7 +89,7 @@ export default function Index() {
                 >
                   <Link
                     to={`/portfolio/${img.slug}`}
-                    style={{ aspectRatio: aspect.replace("/", " / ") }}
+                    style={{ aspectRatio: img.aspect.replace("/", " / ") }}
                     className={`group relative block w-full overflow-hidden rounded-2xl shadow-md transition-shadow duration-500 hover:shadow-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"}`}
                     aria-label={`View project: ${img.title}`}
                   >
