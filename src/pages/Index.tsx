@@ -106,7 +106,7 @@ export default function Index() {
             Working with FIG made a huge difference, my Instagram grew from 400 to 1,395 followers, the workshops sold out, and I felt comfortable in front of cameras, even getting invited to TV; Professional and dedicated support. Highly recommend!
           </p>
           <div className="mt-10 flex items-center gap-4">
-            <div className="h-12 w-12 rounded-full bg-[#FF7A3D] ring-2 ring-[#f0d78c]/60" />
+            <div className="h-12 w-12 rounded-full bg-[#6f64ff] ring-2 ring-[#f0d78c]/60" />
             <div>
               <p className="font-medium text-[#6f64ff]">Oficina Amor</p>
               <p className="text-sm text-[#1a1a2e]/70">Head of Growth</p>
