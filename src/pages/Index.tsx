@@ -17,15 +17,16 @@ function shuffle<T>(arr: T[]): T[] {
 export default function Index() {
   const shuffledItems = useMemo(() => {
     const items = shuffle(portfolioItems);
-    // Pool of column spans (out of 6) to create varied tile sizes
-    const spanPool = shuffle([2, 3, 2, 4, 3]);
+    // Subtle size variation: most items are standard 4/5; a couple get slightly taller/shorter
+    const aspectPool = shuffle(["4/5", "4/5", "3/4", "4/5", "1/1"]);
     return items.map((item, i) => ({
       item,
-      colSpan: spanPool[i % spanPool.length],
+      aspect: aspectPool[i % aspectPool.length],
       floatDelay: Math.random() * 2,
       floatDuration: 5 + Math.random() * 3,
     }));
   }, []);
+
 
   return (
     <>
@@ -74,21 +75,14 @@ export default function Index() {
 
       {/* GALLERY MOSAIC */}
       <section id="portfolio" className="bg-cream px-6 pt-20">
-        <div className="mx-auto grid max-w-[68rem] auto-rows-auto grid-flow-dense grid-cols-2 gap-4 md:grid-cols-6 md:gap-5">
-          {shuffledItems.map(({ item: img, colSpan, floatDelay, floatDuration }, i) => {
-            const spanClass =
-              colSpan === 2
-                ? "md:col-span-2"
-                : colSpan === 3
-                ? "md:col-span-3"
-                : "md:col-span-4";
+        <div className="mx-auto grid max-w-[68rem] grid-cols-2 gap-4 md:grid-cols-3 md:gap-5">
+          {shuffledItems.map(({ item: img, aspect, floatDelay, floatDuration }, i) => {
             return (
               <motion.div
                 key={img.slug}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className={`${spanClass}`}
               >
                 <motion.div
                   animate={{ y: [0, -8, 0] }}
@@ -97,7 +91,7 @@ export default function Index() {
                 >
                   <Link
                     to={`/portfolio/${img.slug}`}
-                    style={{ aspectRatio: img.aspect.replace("/", " / ") }}
+                    style={{ aspectRatio: aspect.replace("/", " / ") }}
                     className={`group relative block w-full overflow-hidden rounded-2xl shadow-md transition-shadow duration-500 hover:shadow-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"}`}
                     aria-label={`View project: ${img.title}`}
                   >
