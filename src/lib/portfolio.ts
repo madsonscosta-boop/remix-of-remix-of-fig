@@ -109,3 +109,11 @@ export const portfolioItems: PortfolioItem[] = [
 export function getPortfolioItem(slug: string): PortfolioItem | undefined {
   return portfolioItems.find((p) => p.slug === slug);
 }
+
+export function parseTags(category: string): string[] {
+  return category
+    .replace(/^TAGS:\s*/, "")
+    .split("·")
+    .map((t) => t.trim())
+    .filter((t) => t.length > 0);
+}
