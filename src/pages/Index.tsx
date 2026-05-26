@@ -109,7 +109,7 @@ export default function Index() {
             <div className="h-12 w-12 rounded-full bg-[#f0d78c]" />
             <div>
               <p className="font-medium text-[#f0d78c]">Oficina Amor</p>
-              <p className="text-sm text-[#fafbfc]/60">Head of Growth</p>
+              <p className="text-sm text-[#fafbfc]/80">Head of Growth</p>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function Index() {
             <br />
             <span className="text-[#f0d78c]">Let's make it happen!</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#fafbfc]/70">
+          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#fafbfc]/85">
             Send an email and we'll get back to you shortly.
           </p>
 
@@ -136,7 +136,7 @@ export default function Index() {
             </a>
           </div>
 
-          <p className="mt-6 text-center text-sm text-[#fafbfc]/60">
+          <p className="mt-6 text-center text-sm text-[#fafbfc]/80">
             or write to{" "}
             <a href={mailtoLink()} className="underline decoration-[#f0d78c] underline-offset-4 hover:text-[#f0d78c]">{EMAIL}</a>
           </p>
