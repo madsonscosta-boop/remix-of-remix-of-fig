@@ -123,7 +123,7 @@ export default function Index() {
             <br />
             <span className="text-[#f0d78c]">Let's make it happen!</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#fafbfc]/70">
+          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#fafbfc]/85">
             Send an email and we'll get back to you shortly.
           </p>
 
