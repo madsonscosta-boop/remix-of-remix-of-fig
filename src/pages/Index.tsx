@@ -99,7 +99,7 @@ export default function Index() {
       </section>
 
       {/* QUOTE / SHOWCASE */}
-      <section className="border-t border-[#0E4C5A]/40 bg-[#2d2d4a] text-[#EFE7DA]">
+      <section className="border-t border-[#0E4C5A]/40 bg-[#D8D3C9] text-[#1a1a2e]">
         <div className="mx-auto max-w-7xl px-6 py-28">
           <span aria-hidden className="block font-display text-7xl leading-none text-[#FF7A3D]">"</span>
           <p className="mt-4 font-display text-2xl leading-tight md:text-4xl">
@@ -108,8 +108,8 @@ export default function Index() {
           <div className="mt-10 flex items-center gap-4">
             <div className="h-12 w-12 rounded-full bg-[#FF7A3D] ring-2 ring-[#f0d78c]/60" />
             <div>
-              <p className="font-medium text-[#f0d78c]">Oficina Amor</p>
-              <p className="text-sm text-[#D8D3C9]">Head of Growth</p>
+              <p className="font-medium text-[#6f64ff]">Oficina Amor</p>
+              <p className="text-sm text-[#1a1a2e]/70">Head of Growth</p>
             </div>
           </div>
         </div>
