@@ -34,6 +34,8 @@ export default function PortfolioDetail() {
             ))}
           </div>
         )}
+      </section>
+
 
       <section className="mx-auto max-w-6xl px-6 pb-16">
         {item.layout === "video-image-video" && item.videos && item.centerImage ? (
