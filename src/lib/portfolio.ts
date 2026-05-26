@@ -101,6 +101,7 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/wasteland/image-2.jpeg",
       "/portfolio/wasteland/image-3.jpeg",
     ],
+    highlights: ["20+ artists coordinated", "Engaged community"],
   },
 ];
 
