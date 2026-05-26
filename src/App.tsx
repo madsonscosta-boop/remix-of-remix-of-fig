@@ -67,7 +67,7 @@ function Header() {
             <NavLink to="/#services" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" onClick={() => setOpen(false)}>Services</NavLink>
             <NavLink to="/#portfolio" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" onClick={() => setOpen(false)}>Works</NavLink>
             <NavLink to="/about" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" onClick={() => setOpen(false)}>About</NavLink>
-            <NavLink to="/#contact" className="mt-4 rounded-full bg-brand px-8 py-4 text-lg text-white transition hover:bg-brand-glow" onClick={() => setOpen(false)}>Talk</NavLink>
+            <NavLink to="/#contact" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-brand-glow" onClick={() => setOpen(false)}>Talk</NavLink>
           </nav>
         </div>
       )}
