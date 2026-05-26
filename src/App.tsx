@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, Link, useLocation, NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Mail } from "lucide-react";
 import logo from "./assets/fig-logo.png";
 
 import Index from "./pages/Index";
@@ -96,10 +96,26 @@ function Footer() {
         </div>
         <div>
           <p className="text-xs uppercase tracking-widest text-white/60">Contact</p>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
-            <li><a href="mailto:hello@figtheagency.com" className="transition hover:text-brand-glow">hello@figtheagency.com</a></li>
-            <li><a href="https://www.instagram.com/figtheagency" className="transition hover:text-brand-glow">@figtheagency</a></li>
-          </ul>
+          <div className="mt-4 flex items-center gap-3">
+            <a
+              href="mailto:hello@figtheagency.com"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/80 transition hover:bg-white hover:text-[#0e1020]"
+              aria-label="Email"
+            >
+              <Mail size={16} />
+            </a>
+            <a
+              href="https://www.instagram.com/figtheagency"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/80 transition hover:bg-white hover:text-[#0e1020]"
+              aria-label="Instagram"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="5" />
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div>
           <button className="rounded-full bg-brand px-6 py-2 text-xs uppercase tracking-widest text-white transition hover:bg-brand-glow">
