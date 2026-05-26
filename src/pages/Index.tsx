@@ -91,7 +91,7 @@ export default function Index() {
                 >
                   <Link
                     to={`/portfolio/${img.slug}`}
-                    style={{ aspectRatio: img.aspect.replace("/", " / ") }}
+                    style={{ aspectRatio: aspect.replace("/", " / ") }}
                     className={`group relative block w-full overflow-hidden rounded-2xl shadow-md transition-shadow duration-500 hover:shadow-2xl ${img.fit === "contain" ? "bg-transparent" : "bg-background"}`}
                     aria-label={`View project: ${img.title}`}
                   >
