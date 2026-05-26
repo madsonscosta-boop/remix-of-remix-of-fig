@@ -117,28 +117,28 @@ export default function Index() {
 
       {/* CTA — Email (no backend) */}
       <section id="contact" className="bg-cream px-6 py-20 scroll-mt-24">
-        <div className="mx-auto max-w-6xl rounded-3xl bg-[#1a1a2e] px-6 py-16 text-[#fafbfc] md:px-16 md:py-20">
+        <div className="mx-auto max-w-6xl rounded-3xl bg-[#1a1a2e] px-6 py-16 text-[#EFE7DA] md:px-16 md:py-20 ring-1 ring-[#0E4C5A]/40">
           <h2 className="text-center font-display text-4xl leading-tight md:text-5xl">
             Like what you see?
             <br />
             <span className="text-[#f0d78c]">Let's make it happen!</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#fafbfc]/85">
+          <p className="mx-auto mt-6 max-w-xl text-center text-base text-[#D8D3C9]">
             Send an email and we'll get back to you shortly.
           </p>
 
           <div className="mx-auto mt-12 max-w-md">
             <a
               href={mailtoLink()}
-              className="block rounded-full bg-[#6f64ff] px-8 py-5 text-center text-base font-semibold text-white shadow-lg shadow-[#6f64ff]/40 transition hover:bg-[#5a50e6] hover:scale-105 hover:shadow-xl"
+              className="block rounded-full bg-[#6f64ff] px-8 py-5 text-center text-base font-semibold text-white shadow-lg shadow-[#6f64ff]/40 transition hover:bg-[#FF7A3D] hover:scale-105 hover:shadow-xl hover:shadow-[#FF7A3D]/40"
             >
               Send email
             </a>
           </div>
 
-          <p className="mt-6 text-center text-sm text-[#fafbfc]/80">
+          <p className="mt-6 text-center text-sm text-[#D8D3C9]">
             or write to{" "}
-            <a href={mailtoLink()} className="underline decoration-[#f0d78c] underline-offset-4 hover:text-[#f0d78c]">{EMAIL}</a>
+            <a href={mailtoLink()} className="underline decoration-[#FF7A3D] underline-offset-4 hover:text-[#f0d78c]">{EMAIL}</a>
           </p>
         </div>
       </section>
