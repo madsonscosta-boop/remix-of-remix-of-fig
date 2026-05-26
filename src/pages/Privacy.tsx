@@ -6,13 +6,13 @@ export default function Privacy() {
   }, []);
 
   return (
-    <section className="mx-auto max-w-3xl px-6 py-32 text-[#0e1020]">
+    <section className="mx-auto max-w-3xl px-6 py-32 text-ink">
       <h1 className="font-display text-4xl leading-tight md:text-5xl">Política de Privacidade</h1>
-      <p className="mt-4 text-sm text-[#0e1020]/60">Última atualização: maio de 2026</p>
+      <p className="mt-4 text-sm text-ink/60">Última atualização: maio de 2026</p>
 
-      <div className="mt-12 space-y-10 text-base leading-relaxed text-[#0e1020]/80">
+      <div className="mt-12 space-y-10 text-base leading-relaxed text-ink/80">
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">1. Introdução</h2>
+          <h2 className="font-display text-2xl text-ink">1. Introdução</h2>
           <p className="mt-3">
             A FIG The Agency ("nós", "nosso" ou "a Agência") valoriza a privacidade dos seus dados. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos suas informações pessoais ao utilizar nossos serviços, site e plataformas digitais.
           </p>
