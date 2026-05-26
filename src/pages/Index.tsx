@@ -88,7 +88,7 @@ export default function Index() {
                     {s.t}
                   </button>
                 </PopoverTrigger>
-                <PopoverContent side="top" className="max-w-xs rounded-2xl border-cream/30 bg-primary text-cream">
+                <PopoverContent side="top" className="max-w-xs rounded-2xl border-cream/30 bg-[#0055FF] text-cream">
                   <p className="font-display text-lg">{s.t}</p>
                   <p className="mt-2 text-sm text-cream/80">{s.d}</p>
                 </PopoverContent>
