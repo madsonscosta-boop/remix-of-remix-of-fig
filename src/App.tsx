@@ -126,6 +126,7 @@ export default function App() {
           <Route path="/work" element={<Trabalhos />} />
           <Route path="/contact" element={<Contato />} />
           <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
