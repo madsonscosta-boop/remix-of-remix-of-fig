@@ -15,18 +15,6 @@ export default function Sobre() {
         <p>For us, marketing isn't just about being seen. It's about being understood, remembered, and chosen.</p>
       </div>
 
-      <div className="mt-16 grid gap-6 sm:grid-cols-3">
-        {[
-          { k: "2026", v: "" },
-          { k: "12+", v: "Brands served" },
-          { k: "4", v: "People on the team" },
-        ].map((s) => (
-          <div key={s.k} className="rounded-2xl border border-border bg-card p-6">
-            <p className="font-display text-4xl text-background">{s.k}</p>
-            <p className="mt-1 text-sm text-muted-foreground/60">{s.v}</p>
-          </div>
-        ))}
-      </div>
     </section>
   );
 }
