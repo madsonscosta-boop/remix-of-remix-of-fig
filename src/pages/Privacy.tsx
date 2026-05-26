@@ -19,7 +19,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">2. Dados que Coletamos</h2>
+          <h2 className="font-display text-2xl text-ink">2. Dados que Coletamos</h2>
           <p className="mt-3">
             Podemos coletar os seguintes tipos de dados:
           </p>
