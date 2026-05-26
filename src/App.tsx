@@ -9,6 +9,7 @@ import Servicos from "./pages/Servicos";
 import Trabalhos from "./pages/Trabalhos";
 import Contato from "./pages/Contato";
 import PortfolioDetail from "./pages/PortfolioDetail";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
 function ScrollToTop() {
@@ -77,7 +78,7 @@ function Header() {
 function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#0e1020] text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-5">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
             <img src={logo} alt="FIG" className="h-10 w-auto" />
@@ -98,6 +99,12 @@ function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-white/80">
             <li><a href="mailto:hello@figtheagency.com" className="transition hover:text-brand-glow">hello@figtheagency.com</a></li>
             <li><a href="https://www.instagram.com/figtheagency" className="transition hover:text-brand-glow">@figtheagency</a></li>
+          </ul>
+        </div>
+        <div>
+          <p className="text-xs uppercase tracking-widest text-white/60">Legal</p>
+          <ul className="mt-4 space-y-2 text-sm text-white/80">
+            <li><Link to="/privacy" className="transition hover:text-brand-glow">Privacy Policy</Link></li>
           </ul>
         </div>
       </div>
@@ -124,6 +131,7 @@ export default function App() {
           <Route path="/work" element={<Trabalhos />} />
           <Route path="/contact" element={<Contato />} />
           <Route path="/portfolio/:slug" element={<PortfolioDetail />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
