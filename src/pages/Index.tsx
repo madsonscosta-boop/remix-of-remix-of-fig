@@ -80,7 +80,7 @@ export default function Index() {
               { t: "Content Creation", d: "Photos, reels, and carousels that translate your brand identity into native content for each platform." },
               { t: "Creative Content", d: "Original concepts, campaigns, and formats built to spark conversation, saves, and shares — not just impressions." },
               { t: "Paid Media", d: "Media management across Meta, Google, TikTok, and YouTube with funnel modeling, high-performance creatives, and weekly optimization to reduce CAC and scale results." },
-              { t: "Video Production", d: "Scripting, filming, and editing videos for ads, UGC, and organic content with a focus on performance and storytelling." },
+              { t: "Lead Generation", d: "Targeted campaigns and funnel strategies designed to attract, qualify, and convert high-intent prospects into measurable business opportunities." },
             ].map((s) => (
               <Popover key={s.t}>
                 <PopoverTrigger asChild>
