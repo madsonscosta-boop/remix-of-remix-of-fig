@@ -78,6 +78,11 @@
   --brand: oklch(0.45 0.31 270);
   --brand-glow: oklch(0.62 0.27 270);
   --cream: oklch(0.93 0.025 350);
+  --ink: oklch(0.18 0.06 275);
+  --citrus: oklch(0.92 0.19 105);
+  --acid: oklch(0.88 0.22 135);
+  --coral: oklch(0.72 0.22 30);
+  --teal: oklch(0.72 0.13 200);
   --card: oklch(0.24 0.14 275);
   --card-foreground: oklch(0.97 0.01 320);
   --popover: oklch(1 0 0);
