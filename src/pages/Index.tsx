@@ -71,7 +71,7 @@ export default function Index() {
 
       {/* SERVICES */}
       <section id="services" className="bg-cream px-6 py-20 scroll-mt-24">
-        <div className="mx-auto max-w-7xl rounded-3xl px-6 py-20 text-center md:px-16 md:py-24" style={{ backgroundColor: "#6f64ff" }}>
+        <div className="mx-auto max-w-7xl rounded-3xl bg-primary px-6 py-20 text-center md:px-16 md:py-24">
           <h2 className="font-display text-4xl text-cream md:text-5xl">Our social media services</h2>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
@@ -88,7 +88,7 @@ export default function Index() {
                     {s.t}
                   </button>
                 </PopoverTrigger>
-                <PopoverContent side="top" className="max-w-xs rounded-2xl border-cream/30 bg-[#6f64ff] text-cream">
+                <PopoverContent side="top" className="max-w-xs rounded-2xl border-cream/30 bg-primary text-cream">
                   <p className="font-display text-lg">{s.t}</p>
                   <p className="mt-2 text-sm text-cream/80">{s.d}</p>
                 </PopoverContent>
