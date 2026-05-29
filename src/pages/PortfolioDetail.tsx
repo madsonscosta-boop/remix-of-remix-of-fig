@@ -14,47 +14,37 @@ const METRIC_ICONS = {
   spark: Sparkles,
 } as const;
 
-function MetricsBlock({ metrics }: { metrics: NonNullable<PortfolioItem["metrics"]> }) {
+function InlineMetrics({ metrics }: { metrics: NonNullable<PortfolioItem["metrics"]> }) {
   return (
-    <section className="mx-auto max-w-6xl px-6 pb-20">
-      <div className="mb-10 flex items-baseline gap-4">
-        <span className="text-tag text-[#6f64ff]">The numbers</span>
-        <span className="text-minor text-[#0E1020]/50 italic">— what actually happened</span>
-      </div>
-      <div
-        className={`grid gap-y-12 gap-x-8 grid-cols-1 sm:grid-cols-2 ${
-          metrics.length === 3 ? "md:grid-cols-3" : metrics.length === 4 ? "md:grid-cols-4" : metrics.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"
-        }`}
-      >
-        {metrics.map((m, i) => {
-          const Icon = METRIC_ICONS[m.icon] ?? Sparkles;
-          const rotations = ["-rotate-2", "rotate-1", "-rotate-1", "rotate-2", "-rotate-1"];
-          return (
-            <div key={i} className="group flex flex-col items-start">
-              <div className="flex items-center gap-3 text-[#6f64ff]/80">
-                <Icon className="h-5 w-5" strokeWidth={1.75} />
-                <span className="text-tag">0{i + 1}</span>
-              </div>
-              <span
-                className={`mt-4 font-serif text-[4.5rem] md:text-[5.5rem] leading-[0.95] tracking-tight text-[#0E1020] transition-transform duration-500 ease-out group-hover:${rotations[i % rotations.length]}`}
-                style={{ fontFamily: "'Instrument Serif', 'Cormorant Garamond', Georgia, serif" }}
-              >
+    <div className="mt-6 flex flex-wrap gap-x-8 gap-y-6 border-t border-[#0E1020]/10 pt-6 animate-fade-in">
+      {metrics.map((m, i) => {
+        const Icon = METRIC_ICONS[m.icon] ?? Sparkles;
+        return (
+          <div
+            key={i}
+            className="group relative flex items-center gap-3 transition-transform duration-300 hover:-translate-y-0.5"
+            style={{ animationDelay: `${i * 80}ms` }}
+          >
+            <span className="relative inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#6f64ff]/10 text-[#6f64ff] transition-all duration-500 group-hover:bg-[#6f64ff] group-hover:text-white group-hover:rotate-[360deg]">
+              <Icon className="h-4 w-4" strokeWidth={2} />
+            </span>
+            <div className="flex flex-col leading-tight">
+              <span className="text-2xl md:text-3xl font-medium tracking-tight text-[#0E1020] transition-colors duration-300 group-hover:text-[#6f64ff]">
                 {m.value}
               </span>
-              <span
-                className="mt-3 text-body text-[#0E1020]/70 max-w-[14rem]"
-                style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" }}
-              >
-                {m.label}
-              </span>
-              <span className="mt-4 block h-px w-12 bg-[#0E1020]/20 transition-all duration-500 group-hover:w-20 group-hover:bg-[#6f64ff]" />
+              <span className="text-tag text-[#0E1020]/55">{m.label}</span>
             </div>
-          );
-        })}
-      </div>
-    </section>
+            {i !== metrics.length - 1 && (
+              <span className="absolute -right-4 top-1/2 hidden h-6 w-px -translate-y-1/2 bg-[#0E1020]/10 sm:block" />
+            )}
+          </div>
+        );
+      })}
+    </div>
   );
 }
+
+
 
 
 
