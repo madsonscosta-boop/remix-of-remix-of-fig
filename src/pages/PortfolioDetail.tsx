@@ -181,7 +181,7 @@ export default function PortfolioDetail() {
         )}
       </section>
 
-      {item.metrics && item.metrics.length > 0 && <MetricsBlock metrics={item.metrics} />}
+
 
 
 
