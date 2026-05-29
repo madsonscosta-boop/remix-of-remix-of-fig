@@ -83,11 +83,11 @@ function Footer() {
           <div className="flex items-center gap-2">
             <img src={logo} alt="FIG" className="h-10 w-auto" />
           </div>
-          <p className="mt-4 max-w-sm text-sm text-white/70">For brands ready to grow.</p>
+          <p className="text-minor mt-4 max-w-sm text-white/70">For brands ready to grow.</p>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-white/60">Navigate</p>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
+          <p className="text-tag text-white/60">Navigate</p>
+          <ul className="mt-4 space-y-2 text-minor text-white/80">
             <li><Link to="/#services" className="transition hover:text-brand-glow">Services</Link></li>
             <li><Link to="/#portfolio" className="transition hover:text-brand-glow">Works</Link></li>
             <li><Link to="/about" className="transition hover:text-brand-glow">About</Link></li>
@@ -95,7 +95,7 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-white/60">Contact</p>
+          <p className="text-tag text-white/60">Contact</p>
           <div className="mt-4 flex items-center gap-3">
             <a
               href="mailto:hello@figtheagency.com"
