@@ -118,13 +118,13 @@ function Footer() {
           </div>
         </div>
         <div>
-          <button className="rounded-full border border-white bg-[#0e1020] px-6 py-2 text-xs uppercase tracking-widest text-white transition hover:bg-[#0e1020]/80">
+          <button className="text-tag rounded-full border border-white bg-[#0e1020] px-6 py-2 text-white transition hover:bg-[#0e1020]/80">
             <Link to="/privacy" className="text-white">PRIVACY</Link>
           </button>
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-xs text-white/60">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-minor text-white/60">
           <span>© {new Date().getFullYear()} FIG. All rights reserved.</span>
           <span>Made with love, in Rotterdam</span>
         </div>
