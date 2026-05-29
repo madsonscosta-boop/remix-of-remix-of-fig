@@ -108,9 +108,9 @@ export const portfolioItems: PortfolioItem[] = [
     summary:
       "The brief: Wasteland is a Rotterdam collective working at the intersection of art and ecology — exhibitions, performances, field trips, workshops. They needed someone to take over their communications and make a complex, fragmented program feel alive and accessible online. Our approach: Hired as communication managers across Instagram, website, and external communications. We coordinated content from 20+ artists and collaborators across a full season, working with a graphic designer on visual templates and consistency. The result: A season of programming communicated clearly, with a growing and engaged community. Instagram became a genuine reflection of the organization — not just a bulletin board.",
     credits: "Graphic design by Martin Foucaut",
-    src: "/portfolio/wasteland/cover.png",
+    src: "/portfolio/wasteland/cover.jpeg",
     alt: "Wasteland - Out of Sight",
-    cls: "", aspect: "898/318", fit: "contain",
+    cls: "", aspect: "3/4", fit: "cover",
     images: [
       "/portfolio/wasteland/image-1.jpeg",
       "/portfolio/wasteland/image-2.jpeg",
