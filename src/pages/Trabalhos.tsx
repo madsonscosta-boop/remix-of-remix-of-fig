@@ -8,11 +8,11 @@ export default function Trabalhos() {
     <>
       <section className="bg-cream px-6 pt-20 pb-12 md:pt-28">
         <div className="mx-auto max-w-7xl text-center">
-          <p className="text-xs uppercase tracking-[0.25em] text-brand/70">Portfolio</p>
-          <h1 className="mt-4 font-display text-5xl leading-[0.95] text-brand md:text-7xl">
+          <p className="text-tag text-brand/70">Portfolio</p>
+          <h1 className="text-title mt-4 text-brand">
             Brands that <span className="italic">showed up</span>.
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base text-brand/80 md:text-lg">
+          <p className="text-body mx-auto mt-6 max-w-2xl text-brand/80">
             A selection of projects where we helped brands build presence, community, and results on social media.
           </p>
         </div>
@@ -39,19 +39,19 @@ export default function Trabalhos() {
 
       <section className="bg-cream px-6 pb-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="font-display text-3xl text-brand md:text-4xl">All projects</h2>
+          <h2 className="text-heading text-brand">All projects</h2>
           <div className="mt-10 divide-y divide-brand/15 border-t border-brand/15">
             {portfolioItems.map((p) => (
               <Link key={p.slug} to={`/portfolio/${p.slug}`} className="group grid grid-cols-1 gap-4 py-8 transition md:grid-cols-12 md:items-center">
-                <p className="font-display text-2xl text-brand md:col-span-4 md:text-3xl">{p.title}</p>
+                <p className="text-heading text-brand md:col-span-4">{p.title}</p>
                 <div className="flex flex-wrap gap-2 md:col-span-6">
                   {parseTags(p.category).map((tag) => (
-                    <span key={tag} className="rounded-full bg-brand/10 px-3 py-1 text-[10px] font-display uppercase tracking-wider text-brand/80">
+                    <span key={tag} className="text-tag rounded-full bg-brand/10 px-3 py-1 text-brand/80">
                       {tag}
                     </span>
                   ))}
                 </div>
-                <span className="text-sm text-brand transition group-hover:translate-x-1 md:col-span-2 md:text-right">View project →</span>
+                <span className="text-minor text-brand transition group-hover:translate-x-1 md:col-span-2 md:text-right">View project →</span>
               </Link>
             ))}
           </div>
@@ -60,8 +60,8 @@ export default function Trabalhos() {
 
       <section className="bg-brand px-6 py-20 text-primary-foreground">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-display text-4xl leading-tight md:text-5xl">Want to be the next case?</h2>
-          <Link to="/contact" className="mt-10 inline-flex rounded-full border border-primary-foreground/70 px-8 py-3 text-sm transition hover:bg-primary-foreground/10">
+          <h2 className="text-title">Want to be the next case?</h2>
+          <Link to="/contact" className="text-minor mt-10 inline-flex rounded-full border border-primary-foreground/70 px-8 py-3 transition hover:bg-primary-foreground/10">
             Get in touch
           </Link>
         </div>
