@@ -116,7 +116,7 @@ export default function Index() {
       {/* SERVICES */}
       <section id="services" className="bg-cream px-6 py-20 scroll-mt-24">
         <div className="mx-auto max-w-7xl rounded-3xl bg-[#6f64ff] px-6 py-20 text-center md:px-16 md:py-24">
-          <h2 className="font-display text-4xl text-cream md:text-5xl">Our social media services</h2>
+          <h2 className="text-title text-cream">Our social media services</h2>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             {[
               { t: "Social Strategy", d: "Positioning, content pillars, and editorial calendars aligned with your audience and brand objectives." },
@@ -128,13 +128,13 @@ export default function Index() {
             ].map((s) => (
               <Popover key={s.t}>
                 <PopoverTrigger asChild>
-                  <button type="button" className="rounded-full border border-cream px-6 py-2.5 text-sm text-cream transition hover:bg-cream hover:text-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-cream">
+                  <button type="button" className="text-tag rounded-full border border-cream px-6 py-2.5 text-cream transition hover:bg-cream hover:text-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-cream">
                     {s.t}
                   </button>
                 </PopoverTrigger>
                 <PopoverContent side="top" className="max-w-xs rounded-2xl border-cream/30 bg-[#6f64ff] text-cream">
-                  <p className="font-display text-lg">{s.t}</p>
-                  <p className="mt-2 text-sm text-cream/80">{s.d}</p>
+                  <p className="text-heading">{s.t}</p>
+                  <p className="text-minor mt-2 text-cream/80">{s.d}</p>
                 </PopoverContent>
               </Popover>
             ))}
