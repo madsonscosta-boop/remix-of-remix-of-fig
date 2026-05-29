@@ -43,7 +43,7 @@ function renderSummary(item: PortfolioItem) {
     <div className="space-y-8">
       {sections.map((s, idx) => (
         <div key={idx}>
-          <h2 className="text-tag text-[#6B2BD9] mb-3">
+          <h2 className="text-tag text-[#4031ff] mb-3">
             {s.label}
           </h2>
           <p className="text-body whitespace-pre-line text-[#0E1020]/85">
@@ -73,15 +73,15 @@ export default function PortfolioDetail() {
         <Link to="/" className="text-minor text-[#0E1020]/70 hover:text-[#0E1020]">← Back</Link>
         <div className="mt-8 flex flex-wrap gap-2">
           {parseTags(item.category).map((tag) => (
-            <span key={tag} className="text-tag rounded-full bg-[#6B2BD9]/10 px-3 py-1 text-[#6B2BD9]">
+            <span key={tag} className="text-tag rounded-full bg-[#4031ff]/10 px-3 py-1 text-[#4031ff]">
               {tag}
             </span>
           ))}
         </div>
-        <h1 className="text-title mt-4 text-[#6B2BD9]">
+        <h1 className="text-title mt-4 text-[#4031ff]">
           {item.title}
         </h1>
-        <div className="mt-3 h-1 w-16 bg-[#6B2BD9] rounded-full" />
+        <div className="mt-3 h-1 w-16 bg-[#4031ff] rounded-full" />
         <div className="mt-10 max-w-3xl">{renderSummary(item)}</div>
       </section>
 

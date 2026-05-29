@@ -47,7 +47,7 @@ function Header() {
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="flex items-center rounded-full border border-[#6D64F6] bg-transparent px-5 py-2 text-sm font-semibold uppercase tracking-widest text-[#6D64F6] transition hover:bg-[#6D64F6] hover:text-white"
+          className="flex items-center rounded-full border border-[#6f64ff] bg-transparent px-5 py-2 text-sm font-semibold uppercase tracking-widest text-[#6f64ff] transition hover:bg-[#6f64ff] hover:text-white"
         >
           <span>{open ? "CLOSE" : "MENU"}</span>
         </button>
