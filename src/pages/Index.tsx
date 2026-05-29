@@ -58,7 +58,7 @@ export default function Index() {
 
 
           <div className="mt-24 rounded-3xl px-8 py-20 text-center text-primary-foreground md:px-16 md:py-28" style={{ backgroundColor: "#0055FF" }}>
-            <p className="mx-auto max-w-4xl font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
+            <p className="mx-auto max-w-4xl font-display text-5xl font-bold leading-[1.05] tracking-tight transition-all duration-500 hover:scale-[1.02] hover:tracking-wider hover:drop-shadow-[0_0_25px_rgba(111,100,255,0.9)] md:text-7xl cursor-default">
               Grow Where It Matters
             </p>
             <p className="mx-auto mt-8 max-w-2xl font-display text-lg font-light leading-relaxed text-primary-foreground/85 md:text-xl">
