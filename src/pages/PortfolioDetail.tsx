@@ -17,45 +17,46 @@ const METRIC_ICONS = {
 function MetricsBlock({ metrics }: { metrics: NonNullable<PortfolioItem["metrics"]> }) {
   return (
     <section className="mx-auto max-w-6xl px-6 pb-20">
-      <div className="mb-8 flex items-center gap-3">
-        <span className="h-px flex-1 bg-[#6f64ff]/20" />
+      <div className="mb-10 flex items-baseline gap-4">
         <span className="text-tag text-[#6f64ff]">The numbers</span>
-        <span className="h-px flex-1 bg-[#6f64ff]/20" />
+        <span className="text-minor text-[#0E1020]/50 italic">— what actually happened</span>
       </div>
-      <div className="relative overflow-hidden rounded-[2rem] border border-[#6f64ff]/15 bg-gradient-to-br from-white via-[#f5f3ff] to-[#ece9ff] p-8 md:p-12 shadow-[0_30px_80px_-40px_rgba(111,100,255,0.45)]">
-        <div className="pointer-events-none absolute -top-32 -right-32 h-72 w-72 rounded-full bg-[#6f64ff]/20 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-[#4031ff]/15 blur-3xl" />
-        <div
-          className={`relative grid gap-10 grid-cols-1 sm:grid-cols-2 ${
-            metrics.length === 3 ? "md:grid-cols-3" : metrics.length === 4 ? "md:grid-cols-4" : metrics.length === 2 ? "md:grid-cols-2" : "md:grid-cols-5"
-          }`}
-        >
-          {metrics.map((m, i) => {
-            const Icon = METRIC_ICONS[m.icon] ?? Sparkles;
-            return (
-              <div
-                key={i}
-                className={`group relative flex flex-col items-start gap-4 px-2 md:px-6 ${
-                  i !== 0 ? "md:border-l md:border-[#6f64ff]/15" : ""
-                }`}
-              >
-                <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6f64ff] to-[#4031ff] text-white shadow-lg shadow-[#6f64ff]/30 transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-[-6deg]">
-                  <Icon className="h-7 w-7" strokeWidth={2.25} />
-                </span>
-                <div className="flex flex-col">
-                  <span className="bg-gradient-to-r from-[#4031ff] to-[#6f64ff] bg-clip-text text-5xl md:text-6xl font-semibold leading-none tracking-tight text-transparent">
-                    {m.value}
-                  </span>
-                  <span className="text-tag mt-3 text-[#0E1020]/60">{m.label}</span>
-                </div>
+      <div
+        className={`grid gap-y-12 gap-x-8 grid-cols-1 sm:grid-cols-2 ${
+          metrics.length === 3 ? "md:grid-cols-3" : metrics.length === 4 ? "md:grid-cols-4" : metrics.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"
+        }`}
+      >
+        {metrics.map((m, i) => {
+          const Icon = METRIC_ICONS[m.icon] ?? Sparkles;
+          const rotations = ["-rotate-2", "rotate-1", "-rotate-1", "rotate-2", "-rotate-1"];
+          return (
+            <div key={i} className="group flex flex-col items-start">
+              <div className="flex items-center gap-3 text-[#6f64ff]/80">
+                <Icon className="h-5 w-5" strokeWidth={1.75} />
+                <span className="text-tag">0{i + 1}</span>
               </div>
-            );
-          })}
-        </div>
+              <span
+                className={`mt-4 font-serif text-[4.5rem] md:text-[5.5rem] leading-[0.95] tracking-tight text-[#0E1020] transition-transform duration-500 ease-out group-hover:${rotations[i % rotations.length]}`}
+                style={{ fontFamily: "'Instrument Serif', 'Cormorant Garamond', Georgia, serif" }}
+              >
+                {m.value}
+              </span>
+              <span
+                className="mt-3 text-body text-[#0E1020]/70 max-w-[14rem]"
+                style={{ fontFamily: "'Instrument Serif', Georgia, serif", fontStyle: "italic" }}
+              >
+                {m.label}
+              </span>
+              <span className="mt-4 block h-px w-12 bg-[#0E1020]/20 transition-all duration-500 group-hover:w-20 group-hover:bg-[#6f64ff]" />
+            </div>
+          );
+        })}
       </div>
     </section>
   );
 }
+
+
 
 
 function highlightText(text: string, highlights: string[]) {
