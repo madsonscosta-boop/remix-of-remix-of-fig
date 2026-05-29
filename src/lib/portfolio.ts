@@ -94,6 +94,11 @@ export const portfolioItems: PortfolioItem[] = [
     fit: "contain",
     credits: "Video and audio by Jeff Hoogendijk\nScript by FIG Agency",
     highlights: ["0 to 6,000 followers"],
+    metrics: [
+      { value: "0→6K", label: "Followers built", icon: "users" },
+      { value: "100+", label: "Designers coordinated", icon: "spark" },
+      { value: "12", label: "Locations covered", icon: "share" },
+    ],
   },
   {
     slug: "estadio",
