@@ -208,7 +208,7 @@
 .text-body {
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: 1.0625rem; /* 17px */
+  font-size: 1.25rem; /* 20px */
   line-height: 1.65;
   letter-spacing: 0;
 }
