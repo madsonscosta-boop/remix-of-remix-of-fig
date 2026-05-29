@@ -8,14 +8,14 @@ export default function Privacy() {
 
   return (
     <section className="mx-auto max-w-3xl px-6 py-32 text-[#0e1020]">
-      <h1 className="font-display text-4xl leading-tight md:text-5xl">
+      <h1 className="text-title">
         PRIVACY POLICY
       </h1>
-      <p className="mt-4 text-sm text-[#0e1020]/60">
+      <p className="text-minor mt-4 text-[#0e1020]/60">
         <strong>Last updated:</strong> May/2026
       </p>
 
-      <div className="mt-12 space-y-10 text-base leading-relaxed text-[#0e1020]/80">
+      <div className="mt-12 space-y-10 text-body text-[#0e1020]/80">
         <div>
           <p>
             FIG respects your privacy and is committed to protecting the personal data you share with us. This policy clearly and transparently describes how we handle that information when you use our website, interact with us, or hire our marketing services.
@@ -23,7 +23,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>1. WHO WE ARE</strong>
           </h2>
           <p className="mt-3">
@@ -39,7 +39,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>2. DATA WE COLLECT</strong>
           </h2>
           <p className="mt-3">
@@ -65,7 +65,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>3. HOW WE USE YOUR DATA</strong>
           </h2>
           <p className="mt-3">
@@ -85,7 +85,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>4. DATA SHARING</strong>
           </h2>
           <p className="mt-3">
@@ -102,7 +102,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>5. COOKIES AND SIMILAR TECHNOLOGIES</strong>
           </h2>
           <p className="mt-3">
@@ -131,7 +131,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>6. STORAGE AND RETENTION</strong>
           </h2>
           <p className="mt-3">
@@ -143,7 +143,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>7. YOUR RIGHTS</strong>
           </h2>
           <p className="mt-3">
@@ -173,7 +173,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>8. SECURITY</strong>
           </h2>
           <p className="mt-3">
@@ -185,7 +185,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>9. CHANGES TO THIS POLICY</strong>
           </h2>
           <p className="mt-3">
@@ -197,7 +197,7 @@ export default function Privacy() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl text-[#0e1020]">
+          <h2 className="text-heading text-[#0e1020]">
             <strong>10. CONTACT</strong>
           </h2>
           <p className="mt-3">

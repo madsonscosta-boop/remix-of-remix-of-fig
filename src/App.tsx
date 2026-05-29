@@ -64,10 +64,10 @@ function Header() {
             <X size={24} />
           </button>
           <nav className="flex h-full w-full flex-col items-center justify-center gap-6 text-background animate-scale-in">
-            <NavLink to="/#services" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Services</NavLink>
-            <NavLink to="/#portfolio" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Works</NavLink>
-            <NavLink to="/about" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>About</NavLink>
-            <NavLink to="/#contact" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Talk</NavLink>
+            <NavLink to="/#services" className="text-title transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Services</NavLink>
+            <NavLink to="/#portfolio" className="text-title transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Works</NavLink>
+            <NavLink to="/about" className="text-title transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>About</NavLink>
+            <NavLink to="/#contact" className="text-title transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Talk</NavLink>
           </nav>
         </div>
       )}
@@ -83,11 +83,11 @@ function Footer() {
           <div className="flex items-center gap-2">
             <img src={logo} alt="FIG" className="h-10 w-auto" />
           </div>
-          <p className="mt-4 max-w-sm text-sm text-white/70">For brands ready to grow.</p>
+          <p className="text-minor mt-4 max-w-sm text-white/70">For brands ready to grow.</p>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-white/60">Navigate</p>
-          <ul className="mt-4 space-y-2 text-sm text-white/80">
+          <p className="text-tag text-white/60">Navigate</p>
+          <ul className="mt-4 space-y-2 text-minor text-white/80">
             <li><Link to="/#services" className="transition hover:text-brand-glow">Services</Link></li>
             <li><Link to="/#portfolio" className="transition hover:text-brand-glow">Works</Link></li>
             <li><Link to="/about" className="transition hover:text-brand-glow">About</Link></li>
@@ -95,7 +95,7 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <p className="text-xs uppercase tracking-widest text-white/60">Contact</p>
+          <p className="text-tag text-white/60">Contact</p>
           <div className="mt-4 flex items-center gap-3">
             <a
               href="mailto:hello@figtheagency.com"
@@ -118,13 +118,13 @@ function Footer() {
           </div>
         </div>
         <div>
-          <button className="rounded-full border border-white bg-[#0e1020] px-6 py-2 text-xs uppercase tracking-widest text-white transition hover:bg-[#0e1020]/80">
+          <button className="text-tag rounded-full border border-white bg-[#0e1020] px-6 py-2 text-white transition hover:bg-[#0e1020]/80">
             <Link to="/privacy" className="text-white">PRIVACY</Link>
           </button>
         </div>
       </div>
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-xs text-white/60">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 text-minor text-white/60">
           <span>© {new Date().getFullYear()} FIG. All rights reserved.</span>
           <span>Made with love, in Rotterdam</span>
         </div>

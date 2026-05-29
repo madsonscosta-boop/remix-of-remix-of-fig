@@ -10,8 +10,8 @@ export default function Servicos() {
   usePageMeta("Services — FIG", "Video, paid media, and content strategy.");
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
-      <p className="text-xs uppercase tracking-[0.25em] text-brand-glow">Services</p>
-      <h1 className="mt-3 max-w-3xl font-display text-6xl leading-[0.95] md:text-7xl">
+      <p className="text-tag text-brand-glow">Services</p>
+      <h1 className="text-title mt-3 max-w-3xl">
         Everything your brand needs to <span className="italic">become the conversation</span>.
       </h1>
 
@@ -19,14 +19,14 @@ export default function Servicos() {
         {services.map((s, i) => (
           <article key={s.t} className="grid gap-8 bg-card p-10 md:grid-cols-[1fr_2fr] md:p-14">
             <div>
-              <p className="text-sm text-muted-foreground">0{i + 1}</p>
-              <p className="mt-2 font-display text-5xl">{s.t}</p>
+              <p className="text-minor text-muted-foreground">0{i + 1}</p>
+              <p className="text-heading mt-2">{s.t}</p>
             </div>
             <div>
-              <p className="text-lg text-foreground/85">{s.d}</p>
-              <ul className="mt-6 grid gap-2 text-sm sm:grid-cols-2">
+              <p className="text-body text-foreground/85">{s.d}</p>
+              <ul className="mt-6 grid gap-2 sm:grid-cols-2">
                 {s.items.map((it) => (
-                  <li key={it} className="flex items-center gap-2 text-muted-foreground">
+                  <li key={it} className="text-minor flex items-center gap-2 text-muted-foreground">
                     <span className="h-1 w-1 rounded-full bg-brand-glow" />
                     {it}
                   </li>

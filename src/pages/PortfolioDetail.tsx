@@ -25,7 +25,7 @@ function renderSummary(item: PortfolioItem) {
   // If no labels found, just render plain
   if (!labelRegex.test(item.summary)) {
     return (
-      <p className="whitespace-pre-line text-lg leading-relaxed text-[#0E1020]/80 font-sans">
+      <p className="text-body whitespace-pre-line text-[#0E1020]/80">
         {highlightText(item.summary, highlights)}
       </p>
     );
@@ -43,10 +43,10 @@ function renderSummary(item: PortfolioItem) {
     <div className="space-y-8">
       {sections.map((s, idx) => (
         <div key={idx}>
-          <h2 className="font-display text-xs uppercase tracking-[0.2em] text-[#6B2BD9] mb-3">
+          <h2 className="text-tag text-[#6B2BD9] mb-3">
             {s.label}
           </h2>
-          <p className="whitespace-pre-line text-lg leading-relaxed text-[#0E1020]/85 font-sans">
+          <p className="text-body whitespace-pre-line text-[#0E1020]/85">
             {highlightText(s.body, highlights)}
           </p>
         </div>
@@ -70,15 +70,15 @@ export default function PortfolioDetail() {
   return (
     <article className="bg-[#fff4f7]">
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-12">
-        <Link to="/" className="text-sm text-[#0E1020]/70 hover:text-[#0E1020]">← Back</Link>
+        <Link to="/" className="text-minor text-[#0E1020]/70 hover:text-[#0E1020]">← Back</Link>
         <div className="mt-8 flex flex-wrap gap-2">
           {parseTags(item.category).map((tag) => (
-            <span key={tag} className="rounded-full bg-[#6B2BD9]/10 px-3 py-1 text-[10px] font-display uppercase tracking-wider text-[#6B2BD9]">
+            <span key={tag} className="text-tag rounded-full bg-[#6B2BD9]/10 px-3 py-1 text-[#6B2BD9]">
               {tag}
             </span>
           ))}
         </div>
-        <h1 className="mt-4 font-display text-6xl leading-[1.05] tracking-tight text-[#6B2BD9] md:text-7xl">
+        <h1 className="text-title mt-4 text-[#6B2BD9]">
           {item.title}
         </h1>
         <div className="mt-3 h-1 w-16 bg-[#6B2BD9] rounded-full" />
@@ -131,12 +131,12 @@ export default function PortfolioDetail() {
           </div>
         )}
         {item.credits && (
-          <p className="mt-6 whitespace-pre-line text-sm text-[#0E1020]/60 font-sans">{item.credits}</p>
+          <p className="text-minor mt-6 whitespace-pre-line text-[#0E1020]/60">{item.credits}</p>
         )}
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <h2 className="font-display text-2xl text-brand">Other projects</h2>
+        <h2 className="text-heading text-brand">Other projects</h2>
         <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
           {others.map((p) => (
             <Link key={p.slug} to={`/portfolio/${p.slug}`} className="group overflow-hidden rounded-2xl bg-background">
