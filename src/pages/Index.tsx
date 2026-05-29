@@ -102,7 +102,7 @@ export default function Index() {
                       <img src={img.src} alt={img.alt} loading="lazy" className={`h-full w-full ${img.fit === "contain" ? "object-contain p-4" : "object-cover"} transition duration-700 group-hover:scale-110`} />
                     )}
                     <div className="absolute inset-0 flex items-center justify-center bg-[#6f64ff]/40 opacity-0 transition duration-500 group-hover:opacity-100">
-                      <span className="px-4 text-center font-display text-2xl text-cream transition-all duration-500 group-hover:scale-110 group-hover:tracking-wider group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] md:text-3xl">{img.title}</span>
+                      <span className="text-heading px-4 text-center text-cream transition-all duration-500 group-hover:scale-110 group-hover:tracking-wider group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]">{img.title}</span>
                     </div>
                   </Link>
                 </motion.div>
