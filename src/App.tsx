@@ -64,10 +64,10 @@ function Header() {
             <X size={24} />
           </button>
           <nav className="flex h-full w-full flex-col items-center justify-center gap-6 text-background animate-scale-in">
-            <NavLink to="/#services" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Services</NavLink>
-            <NavLink to="/#portfolio" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Works</NavLink>
-            <NavLink to="/about" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>About</NavLink>
-            <NavLink to="/#contact" className="font-display text-5xl md:text-7xl tracking-tight transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Talk</NavLink>
+            <NavLink to="/#services" className="text-title transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Services</NavLink>
+            <NavLink to="/#portfolio" className="text-title transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Works</NavLink>
+            <NavLink to="/about" className="text-title transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>About</NavLink>
+            <NavLink to="/#contact" className="text-title transition hover:text-[#0055FF]" onClick={() => setOpen(false)}>Talk</NavLink>
           </nav>
         </div>
       )}
