@@ -26,8 +26,9 @@ function MetricsBlock({ metrics }: { metrics: NonNullable<PortfolioItem["metrics
         <div className="pointer-events-none absolute -top-32 -right-32 h-72 w-72 rounded-full bg-[#6f64ff]/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-[#4031ff]/15 blur-3xl" />
         <div
-          className="relative grid gap-10 md:gap-6"
-          style={{ gridTemplateColumns: `repeat(${metrics.length}, minmax(0, 1fr))` }}
+          className={`relative grid gap-10 grid-cols-1 sm:grid-cols-2 ${
+            metrics.length === 3 ? "md:grid-cols-3" : metrics.length === 4 ? "md:grid-cols-4" : metrics.length === 2 ? "md:grid-cols-2" : "md:grid-cols-5"
+          }`}
         >
           {metrics.map((m, i) => {
             const Icon = METRIC_ICONS[m.icon] ?? Sparkles;
