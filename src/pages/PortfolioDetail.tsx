@@ -64,11 +64,9 @@ function highlightText(text: string, highlights: string[]) {
 
 function renderSummary(item: PortfolioItem) {
   const highlights = item.highlights ?? [];
-  // Split text into sections by labels like "The brief:", "Our approach:", "The result:"
   const labelRegex = /(The brief:|Our approach:|The result:)/g;
   const tokens = item.summary.split(labelRegex).filter((t) => t.trim() !== "");
 
-  // If no labels found, just render plain
   if (!labelRegex.test(item.summary)) {
     return (
       <p className="text-body whitespace-pre-line text-[#0E1020]/80">
@@ -89,17 +87,19 @@ function renderSummary(item: PortfolioItem) {
     <div className="space-y-8">
       {sections.map((s, idx) => (
         <div key={idx}>
-          <h2 className="text-tag text-[#6f64ff] mb-3">
-            {s.label}
-          </h2>
+          <h2 className="text-tag text-[#6f64ff] mb-3">{s.label}</h2>
           <p className="text-body whitespace-pre-line text-[#0E1020]/85">
             {highlightText(s.body, highlights)}
           </p>
+          {s.label === "The result" && item.metrics && item.metrics.length > 0 && (
+            <InlineMetrics metrics={item.metrics} />
+          )}
         </div>
       ))}
     </div>
   );
 }
+
 
 export default function PortfolioDetail() {
   const { slug = "" } = useParams();
