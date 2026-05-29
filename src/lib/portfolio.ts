@@ -69,6 +69,12 @@ export const portfolioItems: PortfolioItem[] = [
       "/portfolio/ori-mart/video-3.mp4",
     ],
     highlights: ["+41%", "272K+ views", "97K views", "€0.05"],
+    metrics: [
+      { value: "272K+", label: "Facebook views", icon: "play" },
+      { value: "+41%", label: "Instagram growth", icon: "trend" },
+      { value: "97K", label: "Reel views", icon: "eye" },
+      { value: "€0.05", label: "Cost per click", icon: "euro" },
+    ],
   },
   {
     slug: "esporte",
