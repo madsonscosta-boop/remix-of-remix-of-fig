@@ -16,6 +16,7 @@ export type PortfolioItem = {
   fit?: "cover" | "contain";
   credits?: string;
   highlights?: string[];
+  metrics?: { value: string; label: string; icon: "play" | "trend" | "eye" | "users" | "share" | "euro" | "spark" }[];
 };
 
 export const portfolioItems: PortfolioItem[] = [
