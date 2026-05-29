@@ -190,6 +190,10 @@ export default function PortfolioDetail() {
         )}
       </section>
 
+      {item.metrics && item.metrics.length > 0 && <MetricsBlock metrics={item.metrics} />}
+
+
+
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <h2 className="text-heading text-brand">Other projects</h2>
         <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
